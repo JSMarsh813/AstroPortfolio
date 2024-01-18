@@ -1,0 +1,46 @@
+
+              <svg
+                width="40"
+                height="40"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient
+                    id="gradientLine"
+                    x2="0"
+                    y2="1"
+                  >
+                    <stop
+                      offset="0"
+                      stop-color="#FF99E6"
+                    />
+                    <stop
+                      offset="0.25"
+                      stop-color="#F59CFB"
+                    />
+                    <stop
+                      offset="0.50"
+                      stop-color="#C17EFB"
+                    />
+                    <stop
+                      offset="0.75"
+                      stop-color="#B5A6F9"
+                    />
+                    <stop
+                      offset="1"
+                      stop-color="#869EF4"
+                    />
+                  </linearGradient>
+             
+                </defs>
+
+                <path
+                  d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z"
+                  fill="url(#gradientLine)"
+                />
+                <path
+                  d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z"
+                  fill="url(#gradientLine)"
+
+                />
+              </svg>
