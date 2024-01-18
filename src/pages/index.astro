@@ -7,11 +7,12 @@ import Sidebar from '@/components/navigation/sidebar';
 import Header from '@/components/navigation/Header'
 import HeroButtons from '@/components/landingpage/HeroButtons'
 import LatestProjects from '@/components/landingpage/LatestProjects'
+import Project from "@/components/Project"
 ---
 
 <Layout title="Welcome to Astro.">
 	
-	<main class="h-full">
+	
 	
 		<header class="flex bg-mainColor px-12 gradient-line mb-8 border-b-8">
 		<Header client:only="react"/>	
@@ -19,8 +20,8 @@ import LatestProjects from '@/components/landingpage/LatestProjects'
 			
 	     </header>
 
-               <!-- ************ hero section ********* -->
-
+              
+<main class="md:ml-60 h-full">
 		<section class=" pt-10 px-12">
 			<div>
 				<h1 class="text-3xl ">Hi There!
@@ -70,17 +71,58 @@ import LatestProjects from '@/components/landingpage/LatestProjects'
 
 		
 				 <LatestProjects>
-				 <article>test </article>
-				 <article>test </article>
-				 <article>test </article>
-				 <article>test </article>
-
 
 
 		</section>
 
-		<section class="gradient-line mt-8 border-t-4 pt-10 px-12">
+		<section class="gradient-line mt-8 border-t-4 pt-10 px-12 mb-20">
 			<h2 class=" heading-styling gradient-line "> Services</h2>
+
+		<div class="grid grid-cols-1 xl:grid-cols-2 gap-8 my-8">
+
+			<section class="flex mb-4">
+				<img src="/images/service-palette.svg"
+				class=" w-32 max-h-32  icon p-6 icon bg-blue-200 border-2 border-mainColor border-dashed">
+				<div class="ml-6">
+					<h3>Website Development </h3>
+					<p> I am committed to creating a website which meets your unique needs and tastes. The process will begin with a personalized wireframe layout and end with a fully-reponsive and live website.</p>
+				</div>
+			</section>
+<!-- rotate-45  icon-->
+			<section class="flex mb-4">
+				<img src="/images/service-palette.svg"				
+				class=" w-32 max-h-32  p-6 icon  bg-blue-200 border-2 border-mainColor border-dashed ">
+				<div class="ml-6">
+					<h3>Responsive Design</h3>
+					<p>It is vital for your website to perform beautifully on a device of any size to retain clients. A responsive design allows your audience to browse and shop efficiently, whether they are using a desktop computer, mobile device, tablet or more.</p>
+				</div>
+			</section>
+
+			<section class="flex mb-4">
+				<img src="/images/service-palette.svg"
+				class=" w-32 max-h-32  icon p-6  icon bg-blue-200 border-2 border-mainColor border-dashed">
+				<div class="ml-6">
+					<h3>Accessiblity </h3>
+					<p> Easy-to-navigate and accessible experience. Maximizing your reach by ensuring even technology challenged or disabled clients can easily access your services.</p>
+				</div>
+			</section>
+
+			
+
+			<section class="flex mb-4">
+				<img src="/images/service-palette.svg"
+				class=" w-32 max-h-32  icon p-6 icon bg-blue-200 border-2 border-mainColor border-dashed">
+				<div class="ml-6">
+					<h3>Search Engine Optimization (SEO) </h3>
+					<p> Helping you reach the most clients possible by utilizing best practices. </p>
+				</div>
+			</section>
+
+			
+
+
+		</div>
+
 	   </section>
 
 	   <section class="gradient-line mt-8 border-t-4 pt-10 px-12">
@@ -94,5 +136,7 @@ import LatestProjects from '@/components/landingpage/LatestProjects'
 <section class="gradient-line mt-8 border-t-4 pt-10 px-12">
 	<h2 class=" heading-styling gradient-line ">  Contact</h2>
 </section>
+
 	</main>
+
 </Layout>

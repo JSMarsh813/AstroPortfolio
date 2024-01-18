@@ -64,7 +64,7 @@ const sidebar = ({ open = false, setOpen, setUserClicked }) => {
                       <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
                         <ul className="flex flex-col space-y-3">
                           <li className="cursor-pointer glow">
-                            CURRENT PROJECTS{" "}
+                            NEWEST PROJECTS{" "}
                           </li>
                           <li className="cursor-pointer glow">
                             SIDE PROJECTS{" "}

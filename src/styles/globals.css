@@ -60,6 +60,22 @@ p {
   font-weight: 700;
 }
 
+.icon:hover {
+  /* gradient bottom border color effect */
+
+  transition: 1s;
+
+  border-radius: 8rem;
+  background-image: linear-gradient(
+    to right,
+    #fbc2eb 0%,
+    #a6c1ee 51%,
+    #fbc2eb 100%
+  );
+
+  /* end of gradient code */
+}
+
 .wave {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s; /* Change to speed up or slow down */

@@ -38,7 +38,7 @@ export default function Projects({
 
       <p class="">{projectDescription}</p>
 
-      <ul class="flex gap-4 my-10">
+      <ul class="flex gap-4 my-10 flex">
         <li>
           <GradientNavigationButton
             text={"Code"}
