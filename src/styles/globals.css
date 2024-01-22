@@ -24,8 +24,15 @@ h2 {
   line-height: 2rem; /* 32px */
 }
 
+/* reduces layout shift of videos */
+video {
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
 .animated-gradient:hover {
-  background-position: right center; /* key for effect to work */ /* gradient effect when button is hovered over */
+  background-position: right center;
   /* transition: 0.25s; */
   background-size: 200% auto;
   color: white;
