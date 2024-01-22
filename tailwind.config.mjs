@@ -20,9 +20,6 @@ module.exports = {
       },
     },
     extend: {
-      backgroundImage: {
-        "dot-pattern": "url('images/dotsBackground.png')",
-      },
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",
         base: "0 2px 4px var(--tw-shadow-color)",

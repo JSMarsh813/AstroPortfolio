@@ -32,13 +32,13 @@ export default function Projects({
         />
         Sorry, your browser doesn't support embedded videos.
       </video>
-      <h3 class="project-titles">{projectTitle}</h3>
+      <h3 className="project-titles">{projectTitle}</h3>
 
-      <span class="project-coding-languages">{projectLanguages}</span>
+      <span className="project-coding-languages">{projectLanguages}</span>
 
-      <p class="">{projectDescription}</p>
+      <p className="">{projectDescription}</p>
 
-      <ul class="flex gap-4 my-10 flex">
+      <ul className="flex gap-4 my-10 flex">
         <li>
           <GradientNavigationButton
             text={"Code"}

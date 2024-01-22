@@ -42,7 +42,7 @@ const sidebar = ({ open = false, setOpen, setUserClicked }) => {
           {/*  ********************    MAIN NAV, DOTTED BACKGROUND*****************  */}
           <div
             id="sidebar"
-            className={`left-0 top-20 w-[250px] h-screen bg-mainColor bg-dot-pattern  pt-5 p-8 z-51 gradient-line border-t-4`}
+            className={`left-0 top-20 w-[250px] h-screen bg-mainColor pt-5 p-8 z-51 gradient-line border-t-4`}
           >
             <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center">
               {/* ************************** FIRST ITEM ***********************  */}
