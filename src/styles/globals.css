@@ -32,7 +32,7 @@ video {
 }
 
 #sidebar {
-  background-image: url("images/dotsBackground.png");
+  background-image: url("/images/dotsBackground.png");
 }
 .animated-gradient:hover {
   background-position: right center;
