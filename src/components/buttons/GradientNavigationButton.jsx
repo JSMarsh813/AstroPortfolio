@@ -9,7 +9,7 @@ export default function GradientNavigationButton({
 }) {
   return (
     <a
-      className="px-4 py-2 rounded-lg bg-violet-900 text-white hover:text-mainColor  animatedGradient"
+      className="px-4 py-2 rounded-lg bg-violet-900 text-white hover:text-mainColor  animated-gradient hover:font-bold"
       aria-label={aria}
       href={link}
       target={"" || target}

@@ -44,17 +44,19 @@ const sidebar = ({ open = false, setOpen, setUserClicked }) => {
             id="sidebar"
             className={`left-0 top-20 w-[250px] h-screen bg-mainColor bg-dot-pattern  pt-5 p-8 z-51 gradient-line border-t-4`}
           >
-            <ul className="flex flex-col space-y-3 pt-6 ">
+            <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center">
               {/* ************************** FIRST ITEM ***********************  */}
-              <li className="glow">HOME</li>
+              <li className="glow gradient-line border-b-2 pb-1">
+                <span className="text-center">HOME</span>
+              </li>
 
-              <li>
+              <li className="gradient-line border-b-2 pb-1">
                 {/* ************************** PROJECTS/ DROPPABLE LIST ***********************  */}
                 <Disclosure>
                   {({ open }) => (
                     <>
-                      <Disclosure.Button className="flex items-center text-left">
-                        <span className="mr-4 glow"> PROJECTS </span>
+                      <Disclosure.Button className="flex mx-auto ">
+                        <span className="pl-6 mr-2 glow ">PROJECTS </span>
                         <img
                           className=""
                           src={`images/icon-arrow-${open ? "up" : "down"}.svg`}
@@ -63,8 +65,8 @@ const sidebar = ({ open = false, setOpen, setUserClicked }) => {
                       </Disclosure.Button>
                       <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
                         <ul className="flex flex-col space-y-3">
-                          <li className="cursor-pointer glow">
-                            NEWEST PROJECTS{" "}
+                          <li className="cursor-pointer glow ">
+                            <a href="#projects">NEWEST PROJECTS</a>
                           </li>
                           <li className="cursor-pointer glow">
                             SIDE PROJECTS{" "}
@@ -78,10 +80,10 @@ const sidebar = ({ open = false, setOpen, setUserClicked }) => {
                   )}
                 </Disclosure>
               </li>
-              <li className="glow">ABOUT ME</li>
-              <li className="glow">SERVICES</li>
-              <li className="glow">LANGUAGES</li>
-              <li className="glow">CONTACT </li>
+              <li className="glow gradient-line border-b-2 pb-1">ABOUT ME</li>
+              <li className="glow gradient-line border-b-2 pb-1">SERVICES</li>
+              <li className="glow gradient-line border-b-2 pb-1">LANGUAGES</li>
+              <li className="glow gradient-line border-b-2 pb-1">CONTACT </li>
             </ul>
 
             <div className="flex flex-col space-y-5 items-center justify-items-center pt-8"></div>

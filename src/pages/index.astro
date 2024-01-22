@@ -2,13 +2,17 @@
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import '@/styles/globals.css'
+import '@/styles/normalize.css'
 import SocialLinksNav from '@/components/navigation/SocialLinksNav';
 import Sidebar from '@/components/navigation/sidebar';
 import Header from '@/components/navigation/Header'
 import HeroButtons from '@/components/landingpage/HeroButtons'
 import LatestProjects from '@/components/landingpage/LatestProjects'
 import Project from "@/components/Project"
+import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundImages"
+
 ---
+
 
 <Layout title="Welcome to Astro.">
 	
@@ -24,7 +28,7 @@ import Project from "@/components/Project"
 <main class="md:ml-60 h-full">
 		<section class=" pt-10 px-12">
 			<div>
-				<h1 class="text-3xl ">Hi There!
+				<h1>Hi There!
 
 					 <span class="wave" title="waving animated hand">&#128075; </span> I'm Janet, Your Next Software Engineer.
 
@@ -66,43 +70,48 @@ import Project from "@/components/Project"
 
 		</section>
    <!--  ******* Project Section ******** -->
-   <section class="gradient-line mt-8 border-t-4 pt-10 px-12">
-			<h2 class=" heading-styling gradient-line "> Latest Projects </h2>
+   <section class="gradient-line mt-8 border-t-4 pt-10 px-12" id="projects">
+			<h2 class=" gradient-line "> Latest Projects </h2>
 
 		
 				 <LatestProjects>
 
 
 		</section>
-
+<!-- 		SERVICES SECTION -->
 		<section class="gradient-line mt-8 border-t-4 pt-10 px-12 mb-20">
-			<h2 class=" heading-styling gradient-line "> Services</h2>
+			<h2 class="  gradient-line "> Services</h2>
 
 		<div class="grid grid-cols-1 xl:grid-cols-2 gap-8 my-8">
 
 			<section class="flex mb-4">
-				<img src="/images/service-palette.svg"
-				class=" w-32 max-h-32  icon p-6 icon bg-blue-200 border-2 border-mainColor border-dashed">
+
+<DiamondBackgroundImages imgSrc="service-palette"/>
+
+					
 				<div class="ml-6">
-					<h3>Website Development </h3>
+					<h3 class="heading-styling">Website Development </h3>
 					<p> I am committed to creating a website which meets your unique needs and tastes. The process will begin with a personalized wireframe layout and end with a fully-reponsive and live website.</p>
 				</div>
 			</section>
-<!-- rotate-45  icon-->
-			<section class="flex mb-4">
-				<img src="/images/service-palette.svg"				
-				class=" w-32 max-h-32  p-6 icon  bg-blue-200 border-2 border-mainColor border-dashed ">
+
+			<section class="flex mb-4 ">
+			
+	
+			<DiamondBackgroundImages imgSrc="service-palette"/>
+			
 				<div class="ml-6">
-					<h3>Responsive Design</h3>
+					<h3 class="heading-styling">Responsive Design</h3>
 					<p>It is vital for your website to perform beautifully on a device of any size to retain clients. A responsive design allows your audience to browse and shop efficiently, whether they are using a desktop computer, mobile device, tablet or more.</p>
 				</div>
 			</section>
 
 			<section class="flex mb-4">
-				<img src="/images/service-palette.svg"
-				class=" w-32 max-h-32  icon p-6  icon bg-blue-200 border-2 border-mainColor border-dashed">
+
+				<DiamondBackgroundImages imgSrc="service-palette"/>
+
 				<div class="ml-6">
-					<h3>Accessiblity </h3>
+					<h3 class="heading-styling">Accessiblity </h3>
 					<p> Easy-to-navigate and accessible experience. Maximizing your reach by ensuring even technology challenged or disabled clients can easily access your services.</p>
 				</div>
 			</section>
@@ -110,10 +119,11 @@ import Project from "@/components/Project"
 			
 
 			<section class="flex mb-4">
-				<img src="/images/service-palette.svg"
-				class=" w-32 max-h-32  icon p-6 icon bg-blue-200 border-2 border-mainColor border-dashed">
+
+				
+						<DiamondBackgroundImages imgSrc="service-palette"/>
 				<div class="ml-6">
-					<h3>Search Engine Optimization (SEO) </h3>
+					<h3 class="heading-styling border-b-0">Search Engine Optimization (SEO) </h3>
 					<p> Helping you reach the most clients possible by utilizing best practices. </p>
 				</div>
 			</section>
@@ -125,18 +135,132 @@ import Project from "@/components/Project"
 
 	   </section>
 
-	   <section class="gradient-line mt-8 border-t-4 pt-10 px-12">
-		<h2 class=" heading-styling gradient-line "> 	The Process</h2>
+	   <!-- THE PROCESS SECTION -->
+	   <section class="gradient-line mt-8 border-t-4 pt-10 px-12 ">
+	
+	
+		<h2 class=" gradient-line "> The Process</h2>
+					
+        
+		<ol class="grid grid-cols-1 xl:grid-cols-2 gap-8 my-8">
+
+			<li>
+				<h3 class="heading-styling"> Step 1 : Consultation</h3>
+				<p> We will chat about your vision, needs, and expectations. Different tiers are available depending on your budget and needs.</p>
+			</li>
+	
+		
+			<li class="content">
+				<h3 class="heading-styling">Step 2 : Proposal</h3>
+				<p> A personalized wire-frame layout will be created so you can visually preview the site and make adjustments.</p>
+			</li>
+	
+			<li class="content">
+				<h3 class="heading-styling">Step 3 : Creation and Adjustments </h3>
+				<p> You will receive regular updates as the site is created, edited and tested. </p>
+			</li>
+	
+			<li class="content">
+				<h3 class="heading-styling"> Step 4 : Deployment</h3>
+				<p> A domain to host your site will be chosen and your site will be deployed. Congratulations, your site is now live!</p>
+			</li>
+		
+		</div>
+
    </section>
 
-   <section class="gradient-line mt-8 border-t-4 pt-10 px-12">
-	<h2 class=" heading-styling gradient-line "> Languages</h2>
+   <!-- LANGUAGES SECTION -->
+
+   <section class="gradient-line mt-8 border-t-4 pt-10 px-12 ">
+	<h2 class=" gradient-line grid-none"> Languages</h2>
+ <div class="grid grid-cols-2 md:grid-cols-3 gap-8 my-8">
+	
+	<section> 
+		<h4 class="heading-styling"> Front-End </h2>
+		<ul>
+				<li class="li-icons">HTML</li>
+				<li class="li-icons">CSS</li>
+				<li class="li-icons">JavaScript</li>
+				<li class="li-icons">React</li>
+				<li class="li-icons">Gatsby</li>
+		</ul>
+	</section>
+
+
+	<section> 
+		<h4 class="heading-styling"> Back-End </h2>
+		<ul>
+				<li class="li-icons">NodeJs</li>
+				<li class="li-icons">Express</li>
+				<li class="li-icons">MongoDB </li>
+				<li class="li-icons">GraphQL</li>
+			
+		</ul>
+	</section>
+
+
+	<section> 
+		<h4 class="heading-styling"> Tools/Other </h2>
+		<ul>
+			<li class="li-icons">Next JS</li>
+				<li class="li-icons">Astro</li>
+				<li class="li-icons">decap cms</li>			
+				<li class="li-icons">EJS</li>
+				<li class="li-icons">Git</li>
+				<li class="li-icons">GitHub</li>
+				<li class="li-icons">Visual Studio Code</li>
+				<li class="li-icons">GIMP</li>
+				<li class="li-icons">Shopify</li>
+				<li class="li-icons">WordPress</li>
+		</ul>
+	</section>
+</div>
 </section>
 
 <section class="gradient-line mt-8 border-t-4 pt-10 px-12">
-	<h2 class=" heading-styling gradient-line ">  Contact</h2>
+	<h2 class="gradient-line ">  Contact</h2>
+
+	<p>All fields marked with * are required</p>
+	<form name="contact" method="POST"  data-netlify="true" > <!---- data-netlify-recaptcha="true"---CAPTCHA--->
+		<div class="fields">
+			<div class="field ">
+				<label for="name">* Name</label>
+				<input type="text" name="name" id="name" required/>
+			</div>
+			<div class="field">
+				<label for="email">* Email</label>
+				<input type="text" name="email" id="email" required/>
+			</div>
+
+			<div class="field">
+				<label for="phone">Phone</label>
+				<input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="333-333-3333">  Format: ###-###-####</input>
+			</div>
+
+			<div class="field">
+				<label for="message">* Message</label>
+				<textarea name="message" id="message" rows="3" required></textarea>
+			</div>
+		</div>
+		<ul class="actions">
+			
+			<li><input type="submit" value="Send A Message" /></li>
+		<!-----	 <div data-netlify-recaptcha="true"></div> ---->
+			
+		</ul>
+	</form>
+
+
 </section>
 
+
 	</main>
+
+	
+		<!-- Footer, Copyright -->
+		<footer id="footer">
+
+			<p class="copyright">&copy; Janet Spellman. All rights reserved.</p>
+		</footer>
 
 </Layout>
