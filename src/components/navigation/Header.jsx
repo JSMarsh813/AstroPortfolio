@@ -2,18 +2,25 @@ import { useState } from "react";
 import Sidebar from "./sidebar";
 import { useRef, useEffect } from "react";
 import React from "react";
+import { useStore } from "@nanostores/react";
+import { isOpen } from "../../store";
+import { userClicked } from "../../store";
 
 export default function Header() {
-  const [userClicked, setUserClicked] = useState(false);
-  // as the screen gets resized, we want to change whether the sidebar is shown or not
-  // but we also want to give the user the ability to open and close it at any screen size as well, so we can't just focus on media breaks for this behavior
-  const [open, setOpen] = useState(false);
-  const [windowSize, setWindowSize] = useState([
-    window.innerHeight,
-    window.innerWidth,
-  ]);
+  // let checkInitialScreenSize = function () {
+  //   let initialOpenState = window.innerWidth > 800 ? true : false;
+  //   isOpen.set(initialOpenState);
+  //   return initialOpenState;
+  // };
 
   const [hamburgerImage, setHamburgerImage] = useState("");
+  let open = useStore(isOpen);
+  let userClickedStatus = useStore(userClicked);
+
+  const [windowSize, setWindowSize] = useState([
+    window.innerWidth,
+    window.innerHeight,
+  ]);
 
   useEffect(() => {
     const windowSizeHandler = () => {
@@ -27,8 +34,9 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
-    if (userClicked == false) {
-      windowSize[0] > 800 ? setOpen(true) : setOpen(false);
+    if (userClickedStatus == false) {
+      let resizeSidebarState = windowSize[0] > 800 ? true : false;
+      isOpen.set(resizeSidebarState);
     } else {
       return;
     }
@@ -40,13 +48,13 @@ export default function Header() {
          if the sidebar is open, this button will be hidden*/}
       <button
         onClick={() => {
-          setOpen(true);
-          setUserClicked(true);
+          isOpen.set(true);
+          userClicked.set(true);
         }}
         aria-expanded={open}
         aria-controls="sidebar"
         aria-label="Open Menu"
-        className={`pl-2 ${open && "hidden"} bg-mainColor`}
+        className={`pl-2`}
       >
         {/* https://upmostly.com/tutorials/react-onhover-event-handling-with-examples */}
 
@@ -60,12 +68,7 @@ export default function Header() {
 
       {/* Actual sidebar */}
       <div className="">
-        <Sidebar
-          open={open}
-          setOpen={setOpen}
-          userClicked={userClicked}
-          setUserClicked={setUserClicked}
-        />
+        <Sidebar open={open} />
       </div>
     </div>
   );

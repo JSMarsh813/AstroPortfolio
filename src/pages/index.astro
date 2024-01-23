@@ -10,8 +10,7 @@ import HeroButtons from '@/components/landingpage/HeroButtons'
 import LatestProjects from '@/components/landingpage/LatestProjects'
 import Project from "@/components/Project"
 import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundImages"
-
-
+import SpaceForSidebar from "@/components/SpaceForSidebar"
 
 ---
 
@@ -26,10 +25,14 @@ import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundI
 			
 	     </header>
 
-              
-<main class="md:ml-60 h-full">
+		
+
+<main class="h-full flex">
+	<SpaceForSidebar client:only="react"/>
+	<div>
 		<section class=" pt-10 px-12">
-			<div>
+		
+			
 				<h1>Hi There!
 
 					 <span class="wave" title="waving animated hand">&#128075; </span> I'm Janet, Your Next Software Engineer.
@@ -39,35 +42,31 @@ import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundI
 
 				<p class="mt-4"> You put lots of hard work and care into your business. You deserve to have a website which reflects that and makes your clients excited to become a repeat customer!</p>
 
-				<p class="mt-4">Whether through work or volunteering, I enjoy helping make other's lives a bit brighter and easier. I'm a software engineer that enjoys collaborating with small business owners to strengthen their digital presence and grow their customer base with attention-grabbing, accessible, and functional websites.</p>
-					
-					
-			</div>
+				<p class="mt-4">Whether through work or volunteering, I enjoy helping make other's lives a bit brighter and easier. I'm a software engineer that enjoys collaborating with small business owners to strengthen their digital presence and grow their customer base with attention-grabbing, accessible, and functional websites.</p>						
+			
 			
 
 					<HeroButtons/>
 			
-					<div>
-						<div class="flex justify-center">
+					<section class="flex justify-center">
+						
 	                      	<h2 class="h-18"> My Github Activity</h2> 	
-
 								<a
 							  aria-label="link to github"
 							  href="https://github.com/JSMarsh813"
 							  >
 							  <img
 							  class="mx-1 inline-block size-7
-							  hover:border-4 hover:rounded-sm hover:border-violet-500 
-					  md:size-8"
+							  hover:border-4 hover:rounded-sm hover:border-violet-500 md:size-8"
 							  src={`images/github.svg`}
 							  alt="github logo"
 							  title="github logo"
 							/>
 						  <a/>
-						</div>
+					</section>
 
 					<img src="https://ghchart.rshah.org/2e1065/JSMarsh813" alt="Github chart" class="block mx-auto bg-violet-950 py-2 px-10 rounded-lg mt-4"/>
-					</div>
+					
 					
 
 		</section>
@@ -167,13 +166,14 @@ import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundI
 				<p> A domain to host your site will be chosen and your site will be deployed. Congratulations, your site is now live!</p>
 			</li>
 		
-		</div>
+		
 
    </section>
 
    <!-- LANGUAGES SECTION -->
 
    <section class="gradient-line mt-8 border-t-4 pt-10 px-12 ">
+
 	<h2 class=" gradient-line grid-none"> Languages</h2>
  <div class="grid grid-cols-2 md:grid-cols-3 gap-8 my-8">
 	
@@ -215,7 +215,7 @@ import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundI
 				<li class="li-icons">Shopify</li>
 				<li class="li-icons">WordPress</li>
 		</ul>
-	</section>
+
 </div>
 </section>
 
@@ -255,8 +255,9 @@ import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundI
 
 </section>
 
+<div>
 
-	</main>
+</main>
 
 	
 		<!-- Footer, Copyright -->

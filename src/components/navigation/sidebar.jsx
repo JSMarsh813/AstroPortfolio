@@ -1,9 +1,13 @@
 import React from "react";
 import { useState } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
+import { useStore } from "@nanostores/react";
+import { isOpen } from "../../store";
+import { userClicked } from "../../store";
 
-const sidebar = ({ open = false, setOpen, setUserClicked }) => {
+const sidebar = () => {
   const [iconMenuClose, setIconMenuClose] = useState("icon-menu-close");
+  let open = useStore(isOpen);
 
   return (
     <>
@@ -22,8 +26,8 @@ const sidebar = ({ open = false, setOpen, setUserClicked }) => {
           <div className="bg-mainColor pt-5 p-8 z-50 ">
             <button
               onClick={() => {
-                setOpen(false);
-                setUserClicked(true);
+                isOpen.set(false);
+                userClicked.set(true);
               }}
               aria-expanded={open}
               aria-controls="sidebar"
