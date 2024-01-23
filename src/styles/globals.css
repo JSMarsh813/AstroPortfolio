@@ -33,9 +33,9 @@ video {
   aspect-ratio: 16 / 9;
 }
 
-#sidebar {
+/* #sidebar {
   background-image: url("/images/dotsBackground.png");
-}
+} */
 .animated-gradient:hover {
   background-position: right center;
   /* transition: 0.25s; */
