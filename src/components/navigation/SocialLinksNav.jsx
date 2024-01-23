@@ -54,6 +54,7 @@ function SocialLinksNav() {
                 src={`/images/${item.icon}.svg`}
                 alt={item.alt}
                 title={item.title}
+                loading="eager"
               />
             </NavigationMenuLink>
           </NavigationMenuItem>
