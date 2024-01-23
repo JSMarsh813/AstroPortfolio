@@ -62,7 +62,7 @@ export default function Projects({
           <li>
             <GradientNavigationButton
               text="View Live!"
-              aria="link to codebase"
+              aria="View Live!"
               link={linkToLiveSite}
               target={"_blank"}
               rel={"noopener noreferrer"}
