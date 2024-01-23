@@ -1,0 +1,47 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import '@/styles/globals.css'
+import '@/styles/normalize.css'
+import SocialLinksNav from '@/components/navigation/SocialLinksNav';
+import Sidebar from '@/components/navigation/sidebar';
+import Header from '@/components/navigation/Header'
+import HeroButtons from '@/components/landingpage/HeroButtons'
+import OlderProjects from '@/components/landingpage/OlderProjects'
+import Project from "@/components/Project"
+import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundImages"
+import SpaceForSidebar from "@/components/SpaceForSidebar"
+
+---
+
+
+<Layout title="Janet Spellman's About Me">
+
+    
+	
+		<header class="flex bg-mainColor gradient-line mb-8 border-b-8">
+            <Header client:only="react" />	
+            <SocialLinksNav>
+                
+             </header>             
+    
+    <main class=" flex pt-10 px-12">
+        <SpaceForSidebar client:only="react"/>
+        <section class="h-full gradient-line mt-8 border-t-4 pt-10 px-12" id="projects">
+			<h2 class=" gradient-line "> Other Projects </h2>
+
+		
+				 <OlderProjects>
+
+
+		</section>
+    </main>
+
+    	<!-- Footer, Copyright -->
+        <div class="">
+		<footer id="footer" class="flex">
+			<SpaceForSidebar client:only="react"/>
+			<small class="ml-8">&copy; Janet Spellman. All rights reserved.</small>
+		</footer>
+    </div>
+</Layout>

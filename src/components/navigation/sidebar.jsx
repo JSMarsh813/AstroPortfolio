@@ -36,7 +36,7 @@ const sidebar = () => {
             >
               <img
                 className=""
-                src={`images/${iconMenuClose}.svg`}
+                src={`/images/${iconMenuClose}.svg`}
                 alt="Close SideBar"
                 onMouseEnter={() => setIconMenuClose("icon-menu-close-bright")}
                 onMouseOut={() => setIconMenuClose("icon-menu-close")}
@@ -51,7 +51,9 @@ const sidebar = () => {
             <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center">
               {/* ************************** FIRST ITEM ***********************  */}
               <li className="glow gradient-line border-b-2 pb-1">
-                <span className="text-center">HOME</span>
+                <a href="/#home">
+                  <span className="text-center">HOME</span>
+                </a>
               </li>
 
               <li className="gradient-line border-b-2 pb-1">
@@ -63,20 +65,18 @@ const sidebar = () => {
                         <span className="pl-6 mr-2 glow ">PROJECTS </span>
                         <img
                           className=""
-                          src={`images/icon-arrow-${open ? "up" : "down"}.svg`}
+                          src={`/images/icon-arrow-${open ? "up" : "down"}.svg`}
                           alt="Arrow"
                         />
                       </Disclosure.Button>
                       <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
                         <ul className="flex flex-col space-y-3">
                           <li className="cursor-pointer glow ">
-                            <a href="#projects">NEWEST PROJECTS</a>
+                            <a href="/#projects">NEWEST PROJECTS</a>
                           </li>
+
                           <li className="cursor-pointer glow">
-                            SIDE PROJECTS{" "}
-                          </li>
-                          <li className="cursor-pointer glow">
-                            OLDER PROJECTS{" "}
+                            <a href="/otherprojects/">OTHER PROJECTS</a>
                           </li>
                         </ul>
                       </Disclosure.Panel>
@@ -84,10 +84,28 @@ const sidebar = () => {
                   )}
                 </Disclosure>
               </li>
-              <li className="glow gradient-line border-b-2 pb-1">ABOUT ME</li>
-              <li className="glow gradient-line border-b-2 pb-1">SERVICES</li>
-              <li className="glow gradient-line border-b-2 pb-1">LANGUAGES</li>
-              <li className="glow gradient-line border-b-2 pb-1">CONTACT </li>
+
+              <li className="glow gradient-line border-b-2 pb-1">
+                <a href="/about/">ABOUT ME</a>
+              </li>
+
+              <li className="glow gradient-line border-b-2 pb-1">
+                <a href="/#services">
+                  <span>SERVICES</span>
+                </a>
+              </li>
+
+              <li className="glow gradient-line border-b-2 pb-1">
+                <a href="/#process">THE PROCESS</a>
+              </li>
+
+              <li className="glow gradient-line border-b-2 pb-1">
+                <a href="/#skills">SKILLS</a>
+              </li>
+
+              <li className="glow gradient-line border-b-2 pb-1">
+                <a href="/#contact">CONTACT</a>
+              </li>
             </ul>
 
             <div className="flex flex-col space-y-5 items-center justify-items-center pt-8"></div>

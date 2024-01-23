@@ -59,7 +59,7 @@ export default function Header() {
         {/* https://upmostly.com/tutorials/react-onhover-event-handling-with-examples */}
 
         <img
-          src={`images/icon-menu-hamburger${hamburgerImage}.svg`}
+          src={`/images/icon-menu-hamburger${hamburgerImage}.svg`}
           alt="open menu"
           onMouseEnter={() => setHamburgerImage("-bright")}
           onMouseOut={() => setHamburgerImage("")}

@@ -1,0 +1,58 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import '@/styles/globals.css'
+import '@/styles/normalize.css'
+import SocialLinksNav from '@/components/navigation/SocialLinksNav';
+import Sidebar from '@/components/navigation/sidebar';
+import Header from '@/components/navigation/Header'
+import HeroButtons from '@/components/landingpage/HeroButtons'
+import LatestProjects from '@/components/landingpage/LatestProjects'
+import Project from "@/components/Project"
+import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundImages"
+import SpaceForSidebar from "@/components/SpaceForSidebar"
+
+---
+
+
+<Layout title="Janet Spellman's About Me">
+
+    
+	
+		<header class="flex bg-mainColor gradient-line mb-8 border-b-8">
+            <Header client:only="react" />	
+            <SocialLinksNav>
+                
+             </header>             
+    
+    <main class=" flex pt-10 px-12">
+        <SpaceForSidebar client:only="react"/>
+        <section class="h-full">
+                         <h1>About Me</h1>
+         
+
+            <p class="mt-4"> Hi there, thanks for visiting my about me page! </p>
+            
+            <p class="mt-4">  I've always enjoyed using technology, whether by building computers, playing classic games with emulators, or creating custom apps to make other's lives easier.  </p>
+            
+            <p class="mt-4"> Although I've had jobs and volunteer roles in a variety of industries, such as physical therapy, animal shelters, bartending, and hospitality, I kept returning to coding. I found becoming a software engineer was the perfect way to combine my love of technology, creativity, and the ability to help others. </p>
+
+            <p class="mt-4">When I'm not coding, you can find me enjoying fantasy games, movies, or books! My favorite games are Hades, baldur's gate 3 and Final Fantasy 14. When the weather cooperates, I'm always hyped to go hiking and I keep meaning to start Brazilian Jiu-Jitsu. Also, I'm a language nerd, I've read a few novels in Japanese and I'm currently working on <span class="line-through">mastering</span> getting half decent at spoken Spanish.
+            </p>
+
+            <p class="mt-4">
+                I look forward to meeting you!
+            </p>
+           
+    
+        </section>
+    </main>
+
+    	<!-- Footer, Copyright -->
+        <div class="absolute bottom-0">
+		<footer id="footer" class="flex">
+			<SpaceForSidebar client:only="react"/>
+			<small class="ml-8">&copy; Janet Spellman. All rights reserved.</small>
+		</footer>
+    </div>
+</Layout>

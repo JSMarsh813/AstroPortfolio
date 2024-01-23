@@ -53,7 +53,7 @@ function SocialLinksNav() {
                 className="mx-1 inline-block size-7
                 hover:border-4 hover:rounded-sm hover:border-violet-500 
         md:size-8"
-                src={`images/${item.icon}.svg`}
+                src={`/images/${item.icon}.svg`}
                 alt={item.alt}
                 title={item.title}
               />

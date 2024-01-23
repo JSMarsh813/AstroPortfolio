@@ -4,6 +4,7 @@ import GradientNavigationButton from "./buttons/GradientNavigationButton";
 export default function Projects({
   webmsrc,
   mp4src,
+  imgsrc,
   vidTitles,
   projectTitle,
   projectLanguages,
@@ -13,25 +14,34 @@ export default function Projects({
 }) {
   return (
     <article>
-      <video
-        controls
-        autoPlay
-        muted
-        loop
-        width="100%"
-      >
-        <source
-          src={`${webmsrc}`}
+      {(webmsrc || mp4src) && (
+        <video
+          controls
+          autoPlay
+          muted
+          loop
+          width="100%"
+        >
+          <source
+            src={`${webmsrc}`}
+            title={vidTitles}
+            type="video/mp4"
+          />
+          <source
+            src={`${mp4src}`}
+            title={vidTitles}
+            type="video/webm"
+          />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      )}
+      {imgsrc && (
+        <img
+          src={`${imgsrc}`}
           title={vidTitles}
-          type="video/mp4"
+          class="h-auto max-w-full aspect-video"
         />
-        <source
-          src={`${mp4src}`}
-          title={vidTitles}
-          type="video/webm"
-        />
-        Sorry, your browser doesn't support embedded videos.
-      </video>
+      )}
       <h3 className="project-titles">{projectTitle}</h3>
 
       <span className="project-coding-languages">{projectLanguages}</span>
@@ -48,15 +58,17 @@ export default function Projects({
             rel={"noopener noreferrer"}
           />
         </li>
-        <li>
-          <GradientNavigationButton
-            text="View Live!"
-            aria="link to codebase"
-            link={linkToLiveSite}
-            target={"_blank"}
-            rel={"noopener noreferrer"}
-          />
-        </li>
+        {linkToLiveSite && (
+          <li>
+            <GradientNavigationButton
+              text="View Live!"
+              aria="link to codebase"
+              link={linkToLiveSite}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            />
+          </li>
+        )}
       </ul>
     </article>
   );

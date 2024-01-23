@@ -8,13 +8,13 @@ export default function HeroButtons() {
       <GradientNavigationButton
         text="ABOUT ME"
         aria="About me page button"
-        link="/about-me"
+        link="/about/"
       />
 
       <GradientNavigationButton
         text="GET A FREE CONSULATION"
         aria="get a free consulation button"
-        link="#contact"
+        link="/#contact"
       />
     </div>
   );

@@ -8,6 +8,7 @@ body {
   font-weight: 600;
   font-size: 1rem; /* 16px */
   line-height: 1.5rem; /* 24px */
+  min-height: 100vh;
 }
 
 p {
@@ -22,6 +23,7 @@ h1 {
 h2 {
   font-size: 1.5rem; /* 24px */
   line-height: 2rem; /* 32px */
+  margin-bottom: 2.25rem; /* 36px */
 }
 
 /* reduces layout shift of videos */
@@ -52,6 +54,16 @@ video {
   /* COLORING for form square when its clicked */
 } /* COLORING, color when button is hovered over */
 
+.field {
+  margin-bottom: 0.875rem; /* 14px */
+  caret-color: rgb(106, 170, 230);
+}
+
+.label-styling {
+  display: inline-block;
+  width: 6rem; /* 96px */
+}
+
 .glow:hover {
   text-shadow: 0px 0px 3px #81cee4; /* COLORING for form square when its clicked */
 }
@@ -66,6 +78,14 @@ video {
   padding-bottom: 10px;
 }
 
+.input-styling {
+  border: 2px solid rgb(54, 2, 54);
+}
+
+input::placeholder {
+  color: #220749;
+  opacity: 0.6;
+}
 .project-titles {
   margin-bottom: 4px;
   font-weight: 700;

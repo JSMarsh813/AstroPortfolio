@@ -15,7 +15,7 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 ---
 
 
-<Layout title="Welcome to Astro.">
+<Layout title="Janet Spellman's Portfolio.">
 	
 	
 	
@@ -30,7 +30,7 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 <main class="h-full flex">
 	<SpaceForSidebar client:only="react"/>
 	<div>
-		<section class=" pt-10 px-12">
+		<section class=" pt-10 px-12" id="home">
 		
 			
 				<h1>Hi There!
@@ -80,10 +80,11 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 
 		</section>
 <!-- 		SERVICES SECTION -->
-		<section class="gradient-line mt-8 border-t-4 pt-10 px-12 mb-20">
+
+		<section class="gradient-line mt-8 border-t-4 pt-10 px-12 mb-20" id="services">
 			<h2 class="  gradient-line "> Services</h2>
 
-		<div class="grid grid-cols-1 xl:grid-cols-2 gap-8 my-8">
+		<div class="grid grid-cols-1 xl:grid-cols-2 gap-8 my-8 ml-4">
 
 			<section class="flex mb-4">
 
@@ -137,7 +138,7 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 	   </section>
 
 	   <!-- THE PROCESS SECTION -->
-	   <section class="gradient-line mt-8 border-t-4 pt-10 px-12 ">
+	   <section class="gradient-line mt-8 border-t-4 pt-10 px-12 " id="process">
 	
 	
 		<h2 class=" gradient-line "> The Process</h2>
@@ -172,19 +173,30 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 
    <!-- LANGUAGES SECTION -->
 
-   <section class="gradient-line mt-8 border-t-4 pt-10 px-12 ">
+   <section class="gradient-line mt-8 border-t-4 pt-10 px-12" id="skills">
 
-	<h2 class=" gradient-line grid-none"> Languages</h2>
+	<h2 class=" gradient-line grid-none"> Skills</h2>
  <div class="grid grid-cols-2 md:grid-cols-3 gap-8 my-8">
 	
+
 	<section> 
+		<h4 class="heading-styling"> Frameworks </h2>
+		<ul>
+			<li class="li-icons">Next JS</li>
+			<li class="li-icons">Astro</li>
+			<li class="li-icons">Gatsby</li>
+		
+		</ul>
+	</section>
+
+	<section> 
+
 		<h4 class="heading-styling"> Front-End </h2>
 		<ul>
 				<li class="li-icons">HTML</li>
 				<li class="li-icons">CSS</li>
 				<li class="li-icons">JavaScript</li>
 				<li class="li-icons">React</li>
-				<li class="li-icons">Gatsby</li>
 		</ul>
 	</section>
 
@@ -204,52 +216,74 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 	<section> 
 		<h4 class="heading-styling"> Tools/Other </h2>
 		<ul>
-			<li class="li-icons">Next JS</li>
-				<li class="li-icons">Astro</li>
-				<li class="li-icons">decap cms</li>			
-				<li class="li-icons">EJS</li>
+				<li class="li-icons">TailwindCSS</li>
 				<li class="li-icons">Git</li>
 				<li class="li-icons">GitHub</li>
 				<li class="li-icons">Visual Studio Code</li>
 				<li class="li-icons">GIMP</li>
 				<li class="li-icons">Shopify</li>
-				<li class="li-icons">WordPress</li>
+				<li class="li-icons">Shadcn/ui</li>
+				<li class="li-icons">EJS</li>
+			
+				
 		</ul>
+	</section>
+
+	<section> 
+		<h4 class="heading-styling"> Content Management Systems (CMS) </h2>
+		<ul>
+			<li class="li-icons">WordPress</li>
+			<li class="li-icons">Decap cms/netlify cms</li>		
+		
+		
+		</ul>
+	</section>
+
+
+
 
 </div>
 </section>
 
-<section class="gradient-line mt-8 border-t-4 pt-10 px-12">
-	<h2 class="gradient-line ">  Contact</h2>
+<section class="gradient-line mt-8 border-t-4 pt-10 px-12" id="contact">
+	<h2 class="gradient-line heading">  Contact</h2>
 
-	<p>All fields marked with * are required</p>
+	<p class="mb-3">All fields marked with * are required</p>
 	<form name="contact" method="POST"  data-netlify="true" > <!---- data-netlify-recaptcha="true"---CAPTCHA--->
 		<div class="fields">
-			<div class="field ">
-				<label for="name">* Name</label>
-				<input type="text" name="name" id="name" required/>
+			<div class="field">
+				<label for="name" class="label-styling">Name *</label>
+				<input type="text" name="name" id="name" required class="input-styling"/>
 			</div>
 			<div class="field">
-				<label for="email">* Email</label>
-				<input type="text" name="email" id="email" required/>
+				<label for="email" class="label-styling">Email *</label>
+				<input type="text" name="email" id="email" required class="input-styling"/>
 			</div>
 
 			<div class="field">
-				<label for="phone">Phone</label>
-				<input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="333-333-3333">  Format: ###-###-####</input>
+				<label for="phone" class="label-styling"> Phone</label>
+				<input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
+				
+				placeholder="  333-333-3333"
+				class="mr-2 input-styling"> 
+				Format: ###-###-####</input>
 			</div>
 
 			<div class="field">
-				<label for="message">* Message</label>
-				<textarea name="message" id="message" rows="3" required></textarea>
+				<label for="message" class="label-styling">Message *</label>
+				<textarea name="message" id="message" rows="3" required class="input-styling"></textarea>
 			</div>
-		</div>
-		<ul class="actions">
-			
-			<li><input type="submit" value="Send A Message" /></li>
+		</div>					
+		
+		<div class="flex">
+				<input 
+				type="submit" 
+				value="Send A Message" 	
+				aria="contact submit button"
+				class="px-4 py-2 ml-32 rounded-lg bg-violet-900 text-white hover:text-mainColor  animated-gradient hover:font-bold"/>
 		<!-----	 <div data-netlify-recaptcha="true"></div> ---->
-			
-		</ul>
+		</div>
+	
 	</form>
 
 
@@ -261,9 +295,9 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 
 	
 		<!-- Footer, Copyright -->
-		<footer id="footer">
-
-			<p class="copyright">&copy; Janet Spellman. All rights reserved.</p>
+		<footer id="footer" class="flex">
+			<SpaceForSidebar client:only="react"/>
+			<small class="ml-8">&copy; Janet Spellman. All rights reserved.</small>
 		</footer>
 
 </Layout>
