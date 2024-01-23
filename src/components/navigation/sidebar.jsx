@@ -46,7 +46,7 @@ const sidebar = () => {
           <div
             id="sidebar"
             className={`left-0 top-20 w-[250px] h-screen bg-mainColor pt-5 p-8 z-51 gradient-line border-t-4`}
-            style={{ backgroundImage: `url("/images/dotsBackground.svg")` }}
+            style={{ backgroundImage: `url("/images/dotsBackground.png")` }}
           >
             <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center">
               {/* ************************** FIRST ITEM ***********************  */}
