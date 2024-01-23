@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://main--vermillion-mandazi-4ce414.netlify.app/sitemap-index.xml
