@@ -1,5 +1,3 @@
-import React from "react";
-
 import GradientNavigationButton from "../buttons/GradientNavigationButton";
 
 export default function HeroButtons() {

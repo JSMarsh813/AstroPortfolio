@@ -1,18 +1,11 @@
 import { useState } from "react";
 import Sidebar from "./sidebar";
-import { useRef, useEffect } from "react";
-import React from "react";
+import { useEffect } from "react";
 import { useStore } from "@nanostores/react";
 import { isOpen } from "../../store";
 import { userClicked } from "../../store";
 
 export default function Header() {
-  // let checkInitialScreenSize = function () {
-  //   let initialOpenState = window.innerWidth > 800 ? true : false;
-  //   isOpen.set(initialOpenState);
-  //   return initialOpenState;
-  // };
-
   const [hamburgerImage, setHamburgerImage] = useState("");
   let open = useStore(isOpen);
   let userClickedStatus = useStore(userClicked);

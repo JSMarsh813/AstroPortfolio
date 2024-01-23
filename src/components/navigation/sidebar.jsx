@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { useStore } from "@nanostores/react";

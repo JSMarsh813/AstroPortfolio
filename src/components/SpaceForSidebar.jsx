@@ -1,4 +1,3 @@
-import React from "react";
 import { useStore } from "@nanostores/react";
 import { isOpen } from "../store";
 
