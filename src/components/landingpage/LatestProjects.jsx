@@ -6,6 +6,22 @@ export default function LatestProjects() {
       <Project
         webmsrc={"images/petProfileTailor.webm"}
         mp4src={"images/petProfileTailor.mp4"}
+        vidTitles={"Video of a responsive blog site"}
+        projectTitle={"Nourished by Keto"}
+        projectLanguages={
+          " Gatsby.js, Netlify CMS/Decap CMS, React, JavaScript, Tailwindcss, CSS, HTML5,gatsby-plugin-disquis, postcss, daisyui, headlessui"
+        }
+        projectDescription={
+          "A personal blog site for a client; the main theme is how the ketogenic diet has effected their health. Their blog posts are integrated with netlify's cms, so the client can add, edit and delete blog post by signing in."
+        }
+        linkToCode={"https://github.com/JSMarsh813/jillyannesite"}
+        linkToLiveSite={"https://nourishedbyketo.com/"}
+      ></Project>
+
+      {/* *********************** PROJECT TWO ************************** */}
+      <Project
+        webmsrc={"images/petProfileTailor.webm"}
+        mp4src={"images/petProfileTailor.mp4"}
         vidTitles={"Video of pet profile tailors website"}
         projectTitle={"Pet Profile Tailor"}
         projectLanguages={
