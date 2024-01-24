@@ -39,6 +39,7 @@ export default function Header() {
     <div className="flex text-white">
       {/* Button to open sidebar 
          if the sidebar is open, this button will be hidden*/}
+
       <button
         onClick={() => {
           isOpen.set(true);

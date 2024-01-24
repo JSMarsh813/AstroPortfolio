@@ -12,6 +12,7 @@ const sidebar = () => {
     <>
       <Transition show={open}>
         {/* Sliding sidebar */}
+
         <Transition.Child
           className="fixed left-0 top-0 w-[250px] z-30 h-screen"
           enter="transition ease-in-out duration-300 transform"
@@ -33,6 +34,13 @@ const sidebar = () => {
               aria-label="close Menu"
               className="text-shadow-lg text-shadow-white"
             >
+              <a
+                className="skip-link right-5 top-5 p-3"
+                href="#social"
+              >
+                Skip to social links
+              </a>
+
               <img
                 className=""
                 src={`/images/${iconMenuClose}.svg`}

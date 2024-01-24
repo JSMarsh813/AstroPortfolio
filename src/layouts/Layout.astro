@@ -2,7 +2,7 @@
 interface Props {
 	title: string;
 }
-
+import { ViewTransitions } from 'astro:transitions';
 const { title } = Astro.props;
 ---
 
@@ -17,6 +17,7 @@ const { title } = Astro.props;
 		<link rel="preload" fetchpriority="high" as="image" href="/images/dotsBackground.png" type="image/png"/>
 		<meta name="Janet Spellman's portfolio" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions />
 	</head>
 	<body>
 		<slot />

@@ -41,7 +41,7 @@ export default function Projects({
         <img
           src={`${imgsrc}`}
           title={vidTitles}
-          class="h-auto max-w-full aspect-video"
+          className="h-auto max-w-full aspect-video"
           loading={loadingtype}
         />
       )}

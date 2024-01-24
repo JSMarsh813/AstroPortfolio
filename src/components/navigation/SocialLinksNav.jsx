@@ -42,8 +42,18 @@ function SocialLinksNav() {
 
   // https://stackoverflow.com/questions/69911071/mapping-and-displaying-fontawesome-icons had to change icon name to a non string value
   return (
-    <NavigationMenu className="md:pr-10 py-2 text-violet-900 justify-end bg-mainColor">
+    <NavigationMenu
+      className="md:pr-10 py-2 text-violet-900 justify-end bg-mainColor"
+      id="social"
+    >
       <NavigationMenuList>
+        <a
+          className="skip-link right-5 top-5 p-3 bg-mainColor text-white"
+          href="#home"
+        >
+          Skip to content
+        </a>
+
         {SocialLinks.map((item) => (
           <NavigationMenuItem key={`${item.title} Nav Menu Item`}>
             <NavigationMenuLink href={item.href}>

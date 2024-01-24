@@ -26,6 +26,13 @@ h2 {
   margin-bottom: 2.25rem; /* 36px */
 }
 
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid blue;
+}
+
 /* reduces layout shift of videos */
 video {
   max-width: 100%;
@@ -114,6 +121,14 @@ input::placeholder {
   );
 }
 
+.skip-link {
+  position: absolute;
+  transform: translateY(-300%);
+  transition: transform 0.3s;
+}
+.skip-link:focus {
+  transform: translateY(0%);
+}
 .shadow-transition-effect:hover {
   /* gradient bottom border color effect */
 
