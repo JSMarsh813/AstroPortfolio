@@ -11,6 +11,7 @@ export default function LatestProjects() {
         projectDescription={"Responsive mock site of a pokemon gym's services."}
         linkToCode={"https://github.com/JSMarsh813/gym"}
         linkToLiveSite={"https://jsmarsh813.github.io/gym/"}
+        loadingtype={"eager"}
       ></Project>
 
       {/* *********************** PROJECT TWO ************************** */}
@@ -26,6 +27,7 @@ export default function LatestProjects() {
           "This project is dedicated to one of the best stories ever told that influenced millions of kids and adults alike. A CRUD app with local authentication so you can add different Pokemon to your deck to view their abilities and information to plan out your perfect PokéDeck."
         }
         linkToCode={"https://github.com/JSMarsh813/group-project-todo-mvc"}
+        loadingtype={"eager"}
       ></Project>
     </div>
   );

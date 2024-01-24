@@ -10,6 +10,7 @@ export default function Projects({
   projectDescription,
   linkToCode,
   linkToLiveSite,
+  loadingtype,
 }) {
   return (
     <article>
@@ -24,12 +25,14 @@ export default function Projects({
           <source
             src={`${webmsrc}`}
             title={vidTitles}
-            type="video/mp4"
+            type="video/webm"
+            loading={loadingtype}
           />
           <source
             src={`${mp4src}`}
             title={vidTitles}
-            type="video/webm"
+            type="video/mp4"
+            loading={loadingtype}
           />
           Sorry, your browser doesn't support embedded videos.
         </video>
@@ -39,6 +42,7 @@ export default function Projects({
           src={`${imgsrc}`}
           title={vidTitles}
           class="h-auto max-w-full aspect-video"
+          loading={loadingtype}
         />
       )}
       <h3 className="project-titles">{projectTitle}</h3>

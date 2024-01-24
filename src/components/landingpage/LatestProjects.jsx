@@ -15,6 +15,7 @@ export default function LatestProjects() {
         }
         linkToCode={"https://github.com/JSMarsh813/jillyannesite"}
         linkToLiveSite={"https://nourishedbyketo.com/"}
+        loadingtype={"eager"}
       ></Project>
 
       {/* *********************** PROJECT TWO ************************** */}
@@ -31,6 +32,7 @@ export default function LatestProjects() {
         }
         linkToCode={"https://pet-profile-tailor.vercel.app/"}
         linkToLiveSite={"https://pet-profile-tailor.vercel.app/"}
+        loadingtype={"eager"}
       ></Project>
 
       {/* *********************** PROJECT TWO ************************** */}
@@ -50,6 +52,7 @@ export default function LatestProjects() {
         }
         linkToCode={"https://github.com/JSMarsh813/Tataru"}
         linkToLiveSite={"https://tataru.onrender.com/"}
+        loadingtype={"eager"}
       ></Project>
 
       {/* *********************** PROJECT THREE ************************** */}
@@ -64,6 +67,7 @@ export default function LatestProjects() {
         }
         linkToCode={"https://github.com/JSMarsh813/Nasa-daily-photo"}
         linkToLiveSite={"https://jsmarsh813.github.io/Nasa-daily-photo/"}
+        loadingtype={"lazy"}
       ></Project>
 
       {/* *********************** PROJECT FOUR ************************** */}
@@ -78,6 +82,7 @@ export default function LatestProjects() {
         }
         linkToCode={"https://github.com/JSMarsh813/TheLeapingRabbit"}
         linkToLiveSite={"https://jsmarsh813.github.io/TheLeapingRabbit/"}
+        loadingtype={"lazy"}
       ></Project>
 
       {/* *********************** PROJECT FOUR ************************** */}
@@ -94,6 +99,7 @@ export default function LatestProjects() {
         }
         linkToCode={"https://github.com/JSMarsh813/thanksapp"}
         linkToLiveSite={"https://thanksfriend.cyclic.app/"}
+        loadingtype={"lazy"}
       ></Project>
     </div>
   );
