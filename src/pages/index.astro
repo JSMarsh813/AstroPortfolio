@@ -253,7 +253,7 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 	<h2 class="gradient-line heading">  Contact</h2>
 
 	<p class="mb-3">All fields marked with * are required</p>
-	<form name="contact" method="POST"  data-netlify="true" > <!---- data-netlify-recaptcha="true"---CAPTCHA--->
+	<form name="contact" method="POST"  data-netlify="true"> 
 		<div class="fields">
 			<div class="field">
 				<label for="name" class="label-styling">Name *</label>
@@ -280,12 +280,14 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 		</div>					
 		
 		<div class="flex">
-				<input 
+				<button
 				type="submit" 
-				value="Send A Message" 	
 				title="click after filling out all required fields to submit contact request"			
-				class="px-4 py-2 ml-32 rounded-lg bg-violet-900 text-white hover:text-mainColor  animated-gradient hover:font-bold"/>
-		<!-----	 <div data-netlify-recaptcha="true"></div> ---->
+				class="px-4 py-2 ml-32 rounded-lg bg-violet-900 text-white hover:text-mainColor  animated-gradient hover:font-bold"
+				>
+				Send A Message
+		</button>
+	
 		</div>
 	
 	</form>
