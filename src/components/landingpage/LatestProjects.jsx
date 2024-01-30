@@ -3,8 +3,7 @@ export default function LatestProjects() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-12">
       <Project
-        webmsrc={"images/petProfileTailor.webm"}
-        mp4src={"images/petProfileTailor.mp4"}
+        imgsrc={"images/comingSoon.jpg"}
         vidTitles={"Video of a responsive blog site"}
         projectTitle={"Nourished by Keto"}
         projectLanguages={
