@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
 import '@/styles/globals.css'
 import '@/styles/normalize.css'
 import SocialLinksNav from '@/components/navigation/SocialLinksNav';
@@ -8,6 +9,7 @@ import HeroButtons from '@/components/landingpage/HeroButtons'
 import LatestProjects from '@/components/landingpage/LatestProjects'
 import DiamondBackgroundImages from "@/components/landingpage/DiamondBackgroundImages"
 import SpaceForSidebar from "@/components/SpaceForSidebar"
+import wireFrame from "../../src/astroImages/wireFrame.png"
 
 ---
 
@@ -141,7 +143,6 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 	
 	
 		<h2 class=" gradient-line "> The Process</h2>
-					
         
 		<ol class="grid grid-cols-1 xl:grid-cols-2 gap-8 my-8">
 
@@ -153,7 +154,8 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 		
 			<li class="content">
 				<h3 class="heading-styling">Step 2 : Proposal</h3>
-				<p> A personalized wire-frame layout will be created so you can visually preview the site and make adjustments.</p>
+				<p class="mb-4"> A personalized wire-frame layout will be created on figma so you can visually preview the site and suggest adjustments.</p>
+				<Image src={wireFrame} alt="a wireframe of NourishedByKeto showing a color palette and a preview of the home page" height="600"/>
 			</li>
 	
 			<li class="content">
@@ -164,6 +166,11 @@ import SpaceForSidebar from "@/components/SpaceForSidebar"
 			<li class="content">
 				<h3 class="heading-styling"> Step 4 : Deployment</h3>
 				<p> A domain to host your site will be chosen and your site will be deployed. Congratulations, your site is now live!</p>
+
+				<p class="mt-4"> I typically recommend using netlify to host the site, because it offers a SSL/TLS certificate for free (in other words, the s in http). If you don't mind having a ".netlify" after your site name, you can host your site for free. Ex: https://janetspellman.netlify.app/ </p>
+
+				<p class="mt-4">If you want to remove the netlify after your site name, I usually recommend namecheap to buy domains. Price can be as low as 10.28/yr but it depends on your desired site name. I highly recommend against godaddy, due to server outages, predatory pricing/hidden charges and poor support. </p>
+				
 			</li>
 		
 		
