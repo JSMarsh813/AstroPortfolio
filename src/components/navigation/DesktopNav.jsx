@@ -14,7 +14,7 @@ const sidebar = () => {
         {/* Sliding sidebar */}
 
         <Transition.Child
-          className="fixed left-0 top-0 w-[250px] z-30 h-screen"
+          className="fixed left-0 top-0 w-[250px] h-screen"
           enter="transition ease-in-out duration-600 transform"
           enterFrom="translate-x-0"
           enterTo="translate-x-0"
@@ -22,8 +22,7 @@ const sidebar = () => {
           leaveFrom="translate-x-0"
           leaveTo="-translate-x-full"
         >
-          {/* ***********************TOGGABLE MENU ICONS WITH PLAIN BACKGROUND************* */}
-          <div className="bg-mainColor pt-5 p-8 z-50 ">
+          <div className="bg-mainColor border-b-2 gradient-line">
             <button
               onClick={() => {
                 isOpen.set(false);
@@ -32,7 +31,7 @@ const sidebar = () => {
               aria-expanded={open}
               aria-controls="sidebar"
               aria-label="close Menu"
-              className="text-shadow-lg text-shadow-white"
+              className="text-shadow-lg text-shadow-white pl-2 mt-2"
             >
               <a
                 className="skip-link right-5 top-5 p-3"
@@ -50,10 +49,11 @@ const sidebar = () => {
               />
             </button>
           </div>
+
           {/*  ********************    MAIN NAV, DOTTED BACKGROUND*****************  */}
           <div
             id="sidebar"
-            className={`left-0 top-20 w-[250px] h-screen bg-mainColor pt-5 p-8 z-51 gradient-line border-t-4`}
+            className={`left-0 top-20 w-[250px] h-screen bg-mainColor pt-5 p-8 z-51 text-white`}
             style={{ backgroundImage: `url("/images/dotsBackground.png")` }}
           >
             <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center">

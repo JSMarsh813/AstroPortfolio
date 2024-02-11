@@ -5,3 +5,6 @@ export const isOpen = atom(window.innerWidth > 800 ? true : false);
 // // but we also want to give the user the ability to open and close it at any screen size as well, so we can't just focus on media breaks for this behavior
 
 export const userClicked = atom(false);
+
+export const windowWidth = atom(window.innerWidth);
+export const windowHeight = atom(window.innerHeight);

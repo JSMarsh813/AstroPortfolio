@@ -43,7 +43,7 @@ function SocialLinksNav() {
   // https://stackoverflow.com/questions/69911071/mapping-and-displaying-fontawesome-icons had to change icon name to a non string value
   return (
     <NavigationMenu
-      className="md:pr-10 py-2 text-violet-900 justify-end bg-mainColor"
+      className="md:pr-10 py-2 text-violet-900 bg-mainColor"
       id="social"
     >
       <NavigationMenuList>
