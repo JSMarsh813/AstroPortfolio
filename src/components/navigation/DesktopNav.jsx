@@ -23,31 +23,55 @@ const sidebar = () => {
           leaveTo="-translate-x-full"
         >
           <div className="bg-mainColor border-b-2 gradient-line">
-            <button
-              onClick={() => {
-                isOpen.set(false);
-                userClicked.set(true);
-              }}
-              aria-expanded={open}
-              aria-controls="sidebar"
-              aria-label="close Menu"
-              className="text-shadow-lg text-shadow-white pl-2 mt-2"
-            >
-              <a
-                className="skip-link right-5 top-5 p-3"
-                href="#social"
+            {open ? (
+              <button
+                onClick={() => {
+                  isOpen.set(false);
+                  userClicked.set(true);
+                }}
+                aria-expanded={open}
+                aria-controls="sidebar"
+                aria-label="close Menu"
+                className="text-shadow-lg text-shadow-white pl-2 mt-2"
               >
-                Skip to social links
-              </a>
+                <a
+                  className="skip-link right-5 top-5 p-3"
+                  href="#social"
+                >
+                  Skip to social links
+                </a>
 
-              <img
-                className=""
-                src={`/images/${iconMenuClose}.svg`}
-                alt="Close SideBar"
-                onMouseEnter={() => setIconMenuClose("icon-menu-close-bright")}
-                onMouseOut={() => setIconMenuClose("icon-menu-close")}
-              />
-            </button>
+                <img
+                  className=""
+                  src={`/images/${iconMenuClose}.svg`}
+                  alt="Close SideBar"
+                  onMouseEnter={() =>
+                    setIconMenuClose("icon-menu-close-bright")
+                  }
+                  onMouseOut={() => setIconMenuClose("icon-menu-close")}
+                />
+              </button>
+            ) : (
+              <button
+                onClick={() => {
+                  isOpen.set(true);
+                  userClicked.set(true);
+                }}
+                aria-expanded={open}
+                aria-controls="sidebar"
+                aria-label="Open Menu"
+                className={`pl-2`}
+              >
+                {/* https://upmostly.com/tutorials/react-onhover-event-handling-with-examples */}
+
+                <img
+                  src={`/images/icon-menu-hamburger${hamburgerImage}.svg`}
+                  alt="open menu"
+                  onMouseEnter={() => setHamburgerImage("-bright")}
+                  onMouseOut={() => setHamburgerImage("")}
+                />
+              </button>
+            )}
           </div>
 
           {/*  ********************    MAIN NAV, DOTTED BACKGROUND*****************  */}

@@ -13,7 +13,6 @@ export default function Header() {
   const [hamburgerImage, setHamburgerImage] = useState("");
   let open = useStore(isOpen);
   let userClickedStatus = useStore(userClicked);
-  console.log(windowWidth.value);
 
   const [windowSize, setWindowSize] = useState([
     window.innerWidth,
@@ -32,6 +31,7 @@ export default function Header() {
     };
   }, []);
 
+  //have navs automatically close below 800px, if user has not clicked the hamburger button
   useEffect(() => {
     if (userClickedStatus == false) {
       let resizeSidebarState = windowSize[0] > 800 ? true : false;
@@ -99,7 +99,7 @@ export default function Header() {
       {/* * * * * * * * * * * * * *mobile nav bar * * * * * * * */}
       {/* //we only want the nav bar to open if its been clicked by user, otherwise if screen is shrunk down, hide mobile nav */}
       <div className="">
-        {windowSize[0] < 800 && open && <MobileNav open={open} />}
+        {windowWidth.value < 800 && open && <MobileNav open={open} />}
       </div>
     </div>
   );

@@ -2,10 +2,7 @@ import { useState } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { useStore } from "@nanostores/react";
 import { isOpen } from "../../store";
-import { windowWidth } from "../../store";
-import { userClicked } from "../../store";
 export default function MobileNav() {
-  const [iconMenuClose, setIconMenuClose] = useState("icon-menu-close");
   let open = useStore(isOpen);
 
   return (
