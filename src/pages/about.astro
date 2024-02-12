@@ -13,15 +13,17 @@ import SpaceForSidebar from "@/components/SpaceForDesktopSidebar"
 
     
 	
-		<header class="flex bg-mainColor gradient-line mb-8 border-b-8">
+		<header class="bg-mainColor gradient-line border-b-8">
+
             <Header client:only="react" />	
-            <SocialLinksNav>
+       
                 
              </header>             
     
-    <main class=" flex pt-10 px-12">
+    <main class="h-full flex">
         <SpaceForSidebar client:only="react"/>
-        <section class="h-full">
+
+        <section class="h-full pt-10 px-12">
                          <h1>About Me</h1>
          
 
@@ -42,11 +44,6 @@ import SpaceForSidebar from "@/components/SpaceForDesktopSidebar"
         </section>
     </main>
 
-    	<!-- Footer, Copyright -->
-        <div class="absolute bottom-0">
-		<footer id="footer" class="flex">
-			<SpaceForSidebar client:only="react"/>
-			<small class="ml-8">&copy; Janet Spellman. All rights reserved.</small>
-		</footer>
+
     </div>
-</Layout>@/components/SpaceForDesktopSidebar
+</Layout>

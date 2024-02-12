@@ -27,7 +27,7 @@ export default function SpaceForDesktopSidebar() {
   return (
     <>
       {open && window.innerWidth > 800 && (
-        <div className="grow-0 shrink-0 basis-64 border-r-8 gradient-line">
+        <div className="grow-0 shrink-0 basis-64 ">
           {/* div is not fixed OR flexed
           BUT we also don't want the div flexed, or it will shrink smaller than any given width
           Desktop nav will be fixed WITHIN the flexed div container */}

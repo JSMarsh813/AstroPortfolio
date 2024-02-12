@@ -10,20 +10,21 @@ import SpaceForSidebar from "@/components/SpaceForDesktopSidebar"
 ---
 
 
-<Layout title="Janet Spellman's About Me">
+<Layout title="Janet Spellman's Other Projects">
 
     
-	
-		<header class="flex bg-mainColor gradient-line mb-8 border-b-8">
+  <header class="bg-mainColor gradient-line border-b-8">
+
             <Header client:only="react" />	
-            <SocialLinksNav>
-                
+                        
              </header>             
     
-    <main class=" flex pt-10 px-12">
+             <main class="flex">
         <SpaceForSidebar client:only="react"/>
-        <section class="h-full gradient-line mt-8 border-t-4 pt-10 px-12" id="projects">
-			<h2 class=" gradient-line "> Other Projects </h2>
+
+      
+        <section class="pt-10 px-12" id="projects">
+			<h2> Other Projects </h2>
 
 		
 				 <OlderProjects>
@@ -32,11 +33,5 @@ import SpaceForSidebar from "@/components/SpaceForDesktopSidebar"
 		</section>
     </main>
 
-    	<!-- Footer, Copyright -->
-        <div class="">
-		<footer id="footer" class="flex">
-			<SpaceForSidebar client:only="react"/>
-			<small class="ml-8">&copy; Janet Spellman. All rights reserved.</small>
-		</footer>
-    </div>
-</Layout>@/components/SpaceForDesktopSidebar
+
+</Layout>
