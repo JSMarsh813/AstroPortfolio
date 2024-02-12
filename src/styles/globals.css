@@ -4,7 +4,8 @@
 
 body {
   background-image: url("/images/background.jpg");
-  background-size: cover;
+  background-color: #e1f5ff;
+  background-size: contain;
   color: #220749;
   font-weight: 600;
   font-size: 1rem; /* 16px */
