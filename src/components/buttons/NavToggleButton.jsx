@@ -30,7 +30,7 @@ export default function NavToggleButton() {
           onClick={() => {
             setOpenNav(true);
           }}
-          aria-expanded={open}
+          aria-expanded={openNav}
           aria-controls="sidebar"
           aria-label="Open Menu"
           className={`pl-2`}
