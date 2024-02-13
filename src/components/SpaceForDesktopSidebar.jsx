@@ -1,13 +1,10 @@
-import { useStore } from "@nanostores/react";
-import { isOpen } from "../store";
+// import { useStore } from "@nanostores/react";
+// import { isOpen } from "../store";
 import DesktopNav from "./navigation/DesktopNav";
 
 // only add space if the navbar is open AND the screen is desktop sized
 //aka only add space for desktop sidebar nav, not mobile nav
 export default function SpaceForDesktopSidebar() {
-  let open = useStore(isOpen);
-
-  console.log(`is it open ${open}`);
   return (
     <>
       <div className="grow-0 shrink-0 basis-64 hidden md:block h-full">

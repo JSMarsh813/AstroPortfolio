@@ -1,79 +1,8 @@
-import { useState } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
-import { useStore } from "@nanostores/react";
-import { isOpen } from "../../store";
-// import { userClicked } from "../../store";
 
 const sidebar = () => {
-  // const [iconMenuClose, setIconMenuClose] = useState("icon-menu-close");
-  // let open = useStore(isOpen);
-  // const [hamburgerImage, setHamburgerImage] = useState("");
   return (
     <div>
-      {/* <Transition show={open}> */}
-      {/* Sliding sidebar */}
-
-      {/* <Transition.Child
-          className="fixed left-0 top-0 w-[250px] h-screen"
-          enter="transition ease-in-out duration-600 transform"
-          enterFrom="translate-x-0"
-          enterTo="translate-x-0"
-          leave="transition ease-in-out duration-600 transform"
-          leaveFrom="translate-x-0"
-          leaveTo="-translate-x-full"
-        > */}
-      {/* <div className="bg-mainColor border-b-2 gradient-line">
-            {open ? (
-              <button
-                onClick={() => {
-                  isOpen.set(false);
-                  userClicked.set(true);
-                }}
-                aria-expanded={open}
-                aria-controls="sidebar"
-                aria-label="close Menu"
-                className="text-shadow-lg text-shadow-white pl-2 mt-2"
-              >
-                <a
-                  className="skip-link right-5 top-5 p-3"
-                  href="#social"
-                >
-                  Skip to social links
-                </a>
-
-                <img
-                  className=""
-                  src={`/images/${iconMenuClose}.svg`}
-                  alt="Close SideBar"
-                  onMouseEnter={() =>
-                    setIconMenuClose("icon-menu-close-bright")
-                  }
-                  onMouseOut={() => setIconMenuClose("icon-menu-close")}
-                />
-              </button>
-            ) : (
-              <button
-                onClick={() => {
-                  isOpen.set(true);
-                  userClicked.set(true);
-                }}
-                aria-expanded={open}
-                aria-controls="sidebar"
-                aria-label="Open Menu"
-                className={`pl-2`}
-              >
-                {/* https://upmostly.com/tutorials/react-onhover-event-handling-with-examples */}
-
-      {/* <img
-                  src={`/images/icon-menu-hamburger${hamburgerImage}.svg`}
-                  alt="open menu"
-                  onMouseEnter={() => setHamburgerImage("-bright")}
-                  onMouseOut={() => setHamburgerImage("")}
-                />
-              </button>
-            )}
-          </div> */}
-
       {/*  ********************    MAIN NAV, DOTTED BACKGROUND*****************  */}
       <div
         id="sidebar"
@@ -142,8 +71,6 @@ const sidebar = () => {
 
         <div className="flex flex-col space-y-5 items-center justify-items-center pt-8"></div>
       </div>
-      {/* </Transition.Child>
-      </Transition> */}
     </div>
   );
 };
