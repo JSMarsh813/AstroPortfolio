@@ -1,5 +1,3 @@
-// import { useStore } from "@nanostores/react";
-// import { isOpen } from "../store";
 import DesktopNav from "./navigation/DesktopNav";
 
 // only add space if the navbar is open AND the screen is desktop sized
