@@ -4,6 +4,8 @@ interface Props {
 }
 import { ViewTransitions } from 'astro:transitions';
 const { title } = Astro.props;
+import SocialLinksNav from "../components/navigation/SocialLinksNav"
+import NavToggleButton from "../components/buttons/NavToggleButton"
 ---
 
 <!doctype html>
@@ -19,15 +21,24 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		<ViewTransitions />
 	</head>
-	<body class="h-full relative">
-		<slot />
-	</body>
-	<footer
-	id="footer"
-	>
 
-  <small class="pl-8 absolute bottom-0 bg-mainColor w-full text-white border-t-2 gradient-line">&copy; Janet Spellman. All rights reserved.</small>
-  </footer>
+
+	<body class="h-full relative">
+		<header class="flex justify-between">
+			<NavToggleButton client:only/>
+			<SocialLinksNav />
+		</header>
+
+		<slot />
+
+		<footer
+		id="footer"	
+		class="absolute bottom-0 bg-mainColor w-full border-t-2 gradient-line">
+	
+	        <small class="pl-8  text-white">&copy; Janet Spellman. All rights reserved.</small>
+	  </footer>
+	</body>
+
 </html>
 <style is:global>
 	:root {

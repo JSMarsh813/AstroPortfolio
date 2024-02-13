@@ -4,6 +4,7 @@ import { useStore } from "@nanostores/react";
 import { isOpen } from "../../store";
 export default function MobileNav() {
   let open = useStore(isOpen);
+  console.log(open);
 
   return (
     <>
