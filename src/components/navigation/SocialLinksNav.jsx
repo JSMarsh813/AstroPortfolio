@@ -47,13 +47,20 @@ function SocialLinksNav() {
       id="social"
     >
       <NavigationMenuList>
-        <a
+        {/* <a
           className="skip-link right-5 top-5 p-3 bg-mainColor text-white"
           href="#home"
         >
           Skip to content
-        </a>
-
+        </a> */}
+        <NavigationMenuItem key={`Skip Link For Social Links Nav`}>
+          <NavigationMenuLink
+            href="#home"
+            className="skip-link right-5 top-5 p-3 bg-mainColor text-white"
+          >
+            Skip to content
+          </NavigationMenuLink>
+        </NavigationMenuItem>
         {SocialLinks.map((item) => (
           <NavigationMenuItem key={`${item.title} Nav Menu Item`}>
             <NavigationMenuLink href={item.href}>
