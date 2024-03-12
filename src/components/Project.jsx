@@ -14,7 +14,7 @@ export default function Projects({
 }) {
   return (
     <article>
-      <div style={{ height: "285px" }}>
+      <div className="h-56 md:h-80">
         {(webmsrc || mp4src) && (
           <video
             controls
@@ -26,12 +26,14 @@ export default function Projects({
             <source
               src={`${webmsrc}`}
               title={vidTitles}
+              className="h-48 md:h-64"
               type="video/webm"
               loading={loadingtype}
             />
             <source
               src={`${mp4src}`}
               title={vidTitles}
+              className="h-48 md:h-64"
               type="video/mp4"
               loading={loadingtype}
             />
@@ -42,8 +44,8 @@ export default function Projects({
           <img
             src={`${imgsrc}`}
             title={vidTitles}
-            style={{ height: "255px" }}
-            className=""
+            // style={{ maxHeight: "255px", minHeight: "200px" }}
+            className="h-48 md:h-64"
             loading={loadingtype}
           />
         )}
@@ -54,7 +56,7 @@ export default function Projects({
 
       <p className="">{projectDescription}</p>
 
-      <ul className="flex gap-4 my-10 flex">
+      <ul className="gap-4 my-10 flex">
         <li>
           <GradientNavigationButton
             text={"Code"}
