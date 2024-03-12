@@ -14,42 +14,37 @@ export default function Projects({
 }) {
   return (
     <article>
-      <div className="h-56 md:h-80">
-        {(webmsrc || mp4src) && (
-          <video
-            controls
-            autoPlay
-            muted
-            loop
-            width="100%"
-          >
-            <source
-              src={`${webmsrc}`}
-              title={vidTitles}
-              className="h-48 md:h-64"
-              type="video/webm"
-              loading={loadingtype}
-            />
-            <source
-              src={`${mp4src}`}
-              title={vidTitles}
-              className="h-48 md:h-64"
-              type="video/mp4"
-              loading={loadingtype}
-            />
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-        )}
-        {imgsrc && (
-          <img
-            src={`${imgsrc}`}
+      {(webmsrc || mp4src) && (
+        <video
+          controls
+          autoPlay
+          muted
+          loop
+        >
+          <source
+            src={`${webmsrc}`}
             title={vidTitles}
-            // style={{ maxHeight: "255px", minHeight: "200px" }}
-            className="h-48 md:h-64"
+            type="video/webm"
             loading={loadingtype}
           />
-        )}
-      </div>
+          <source
+            src={`${mp4src}`}
+            title={vidTitles}
+            type="video/mp4"
+            loading={loadingtype}
+          />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+      )}
+      {imgsrc && (
+        <img
+          src={`${imgsrc}`}
+          title={vidTitles}
+          className="h-48 md:h-64"
+          loading={loadingtype}
+        />
+      )}
+
       <h3 className="project-titles">{projectTitle}</h3>
 
       <span className="project-coding-languages">{projectLanguages}</span>
