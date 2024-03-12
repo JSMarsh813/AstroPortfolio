@@ -14,37 +14,40 @@ export default function Projects({
 }) {
   return (
     <article>
-      {(webmsrc || mp4src) && (
-        <video
-          controls
-          autoPlay
-          muted
-          loop
-          width="100%"
-        >
-          <source
-            src={`${webmsrc}`}
+      <div style={{ height: "285px" }}>
+        {(webmsrc || mp4src) && (
+          <video
+            controls
+            autoPlay
+            muted
+            loop
+            width="100%"
+          >
+            <source
+              src={`${webmsrc}`}
+              title={vidTitles}
+              type="video/webm"
+              loading={loadingtype}
+            />
+            <source
+              src={`${mp4src}`}
+              title={vidTitles}
+              type="video/mp4"
+              loading={loadingtype}
+            />
+            Sorry, your browser doesn't support embedded videos.
+          </video>
+        )}
+        {imgsrc && (
+          <img
+            src={`${imgsrc}`}
             title={vidTitles}
-            type="video/webm"
+            style={{ height: "255px" }}
+            className=""
             loading={loadingtype}
           />
-          <source
-            src={`${mp4src}`}
-            title={vidTitles}
-            type="video/mp4"
-            loading={loadingtype}
-          />
-          Sorry, your browser doesn't support embedded videos.
-        </video>
-      )}
-      {imgsrc && (
-        <img
-          src={`${imgsrc}`}
-          title={vidTitles}
-          className="h-auto max-w-full aspect-video"
-          loading={loadingtype}
-        />
-      )}
+        )}
+      </div>
       <h3 className="project-titles">{projectTitle}</h3>
 
       <span className="project-coding-languages">{projectLanguages}</span>
