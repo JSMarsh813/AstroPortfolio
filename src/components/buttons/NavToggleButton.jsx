@@ -1,18 +1,21 @@
 import { useState } from "react";
+import { useStore } from "@nanostores/react";
+import { isNavOpen } from "../../store/navStore";
 
 export default function NavToggleButton() {
   const [iconMenuClose, setIconMenuClose] = useState("icon-menu-close");
   const [hamburgerImage, setHamburgerImage] = useState("");
-  const [openNav, setOpenNav] = useState(false);
 
+  const $isNavOpen = useStore(isNavOpen);
+  console.log($isNavOpen);
   return (
     <div className={`bg-mainColor md:hidden flex justify-center`}>
-      {openNav ? (
+      {$isNavOpen ? (
         <button
           onClick={() => {
-            setOpenNav(false);
+            isNavOpen.set(false);
           }}
-          aria-expanded={open}
+          aria-expanded={$isNavOpen}
           aria-controls="sidebar"
           aria-label="close Menu"
           className="pl-2"
@@ -28,9 +31,9 @@ export default function NavToggleButton() {
       ) : (
         <button
           onClick={() => {
-            setOpenNav(true);
+            isNavOpen.set(true);
           }}
-          aria-expanded={openNav}
+          aria-expanded={$isNavOpen}
           aria-controls="sidebar"
           aria-label="Open Menu"
           className={`pl-2`}

@@ -7,6 +7,7 @@ const { title } = Astro.props;
 import SocialLinksNav from "../components/navigation/SocialLinksNav"
 import NavToggleButton from "../components/buttons/NavToggleButton"
 import thumbnailImage from "../astroImages/thumbnail.webp"
+import MobileNavContainer from "../components/navigation/MobileNavContainer"
 ---
 
 <!doctype html>
@@ -30,7 +31,8 @@ import thumbnailImage from "../astroImages/thumbnail.webp"
 			<NavToggleButton client:load/>
 			<SocialLinksNav />
 		</header>
-
+		<!-- need it to be linked to nav toggle button state, use store-->
+            <MobileNavContainer  client:load/>
 		<slot />
 
 		<footer

@@ -9,7 +9,7 @@ export default function MobileNav() {
         className={` w-screen bg-mainColor gradient-line border-t-4`}
         style={{ backgroundImage: `url("/images/dotsBackground.png")` }}
       >
-        <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center">
+        <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center text-white">
           {/* ************************** FIRST ITEM ***********************  */}
           <li className="glow gradient-line border-b-2 pb-1">
             <a href="/#home">
