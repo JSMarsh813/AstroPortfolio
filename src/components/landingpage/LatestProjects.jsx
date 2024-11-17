@@ -19,7 +19,8 @@ export default function LatestProjects() {
       ></Project>
 
       <Project
-        imgsrc={"images/comingSoon.jpg"}
+        webmsrc={"images/ufancy.webm"}
+        mp4src={"images/ufancy.mp4"}
         vidTitles={"Video of a responsive wordpress site"}
         projectTitle={"Ufancy Photobooth"}
         projectLanguages={
@@ -34,7 +35,8 @@ export default function LatestProjects() {
       ></Project>
 
       <Project
-        imgsrc={"images/comingSoon.jpg"}
+        webmsrc={"images/nourishedByKeto.webm"}
+        mp4src={"images/nourishedByKeto.mp4"}
         vidTitles={"Video of a responsive blog site"}
         projectTitle={"Nourished by Keto"}
         projectLanguages={
