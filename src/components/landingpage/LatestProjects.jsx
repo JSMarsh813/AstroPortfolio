@@ -51,11 +51,9 @@ export default function LatestProjects() {
       ></Project>
 
       <Project
-        webmsrc={
-          "https://user-images.githubusercontent.com/101692334/204751393-7349a015-6414-4ed1-a8f7-ee156c4c9f89.webm"
-        }
-        mp4src={"images/petProfileTailor.mp4"}
-        vidTitles={"Video of pet profile tailors website"}
+        webmsrc={"images/tataru.webm"}
+        mp4src={"images/tataruo.mp4"}
+        vidTitles={"Video of the Tatarus Corner Website"}
         projectTitle={"Tataru's Corner"}
         projectLanguages={
           " HTML, CSS, Tailwindcss, JavaScript, React, Node.JS, React Router, GIMP"
