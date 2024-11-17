@@ -11,6 +11,7 @@ export default function Projects({
   linkToCode,
   linkToLiveSite,
   loadingtype,
+  readmeLink,
 }) {
   return (
     <article>
@@ -69,6 +70,17 @@ export default function Projects({
               text="View Live!"
               aria="View Live!"
               link={linkToLiveSite}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            />
+          </li>
+        )}
+        {readmeLink && (
+          <li>
+            <GradientNavigationButton
+              text="Readme Link!"
+              aria="readme Link!"
+              link={readmeLink}
               target={"_blank"}
               rel={"noopener noreferrer"}
             />

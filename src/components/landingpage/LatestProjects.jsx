@@ -13,9 +13,12 @@ export default function LatestProjects() {
         projectDescription={
           "Help adoption counselors improve pet adoption rates with impactful, fun, and tailor-fitted adoption profiles! Users can easily search and filter through community submitted names and descriptions. After signing up, users can save favorites, follow other users, and submit new names and descriptions."
         }
-        linkToCode={"https://pet-profile-tailor.vercel.app/"}
+        linkToCode={"https://github.com/JSMarsh813/PetProfileTailor"}
         linkToLiveSite={"https://pet-profile-tailor.vercel.app/"}
         loadingtype={"eager"}
+        readmeLink={
+          "https://github.com/JSMarsh813/PetProfileTailor/blob/main/README.md"
+        }
       ></Project>
 
       <Project
@@ -64,6 +67,7 @@ export default function LatestProjects() {
         linkToCode={"https://github.com/JSMarsh813/Tataru"}
         linkToLiveSite={"https://tataru.onrender.com/"}
         loadingtype={"eager"}
+        readmeLink={"https://github.com/JSMarsh813/Tataru/blob/main/README.md"}
       ></Project>
 
       {/* *********************** PROJECT THREE ************************** */}
