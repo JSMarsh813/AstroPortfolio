@@ -52,15 +52,17 @@ export default function Projects({
       <p className="">{projectDescription}</p>
 
       <ul className="gap-4 my-10 flex">
-        <li>
-          <GradientNavigationButton
-            text={"Code"}
-            aria="link to codebase"
-            link={linkToCode}
-            target={"_blank"}
-            rel={"noopener noreferrer"}
-          />
-        </li>
+        {linkToCode && (
+          <li>
+            <GradientNavigationButton
+              text={"Code"}
+              aria="link to codebase"
+              link={linkToCode}
+              target={"_blank"}
+              rel={"noopener noreferrer"}
+            />
+          </li>
+        )}
         {linkToLiveSite && (
           <li>
             <GradientNavigationButton
