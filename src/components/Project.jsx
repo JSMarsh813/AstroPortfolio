@@ -78,8 +78,8 @@ export default function Projects({
         {readmeLink && (
           <li>
             <GradientNavigationButton
-              text="Readme Link!"
-              aria="readme Link!"
+              text="ReadMe Link!"
+              aria="readMe Link!"
               link={readmeLink}
               target={"_blank"}
               rel={"noopener noreferrer"}
