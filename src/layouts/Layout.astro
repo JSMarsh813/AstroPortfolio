@@ -2,7 +2,7 @@
 interface Props {
 	title: string;
 }
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 const { title } = Astro.props;
 import SocialLinksNav from "../components/navigation/SocialLinksNav"
 import NavToggleButton from "../components/buttons/NavToggleButton"
@@ -22,7 +22,7 @@ import MobileNavContainer from "../components/navigation/MobileNavContainer"
 		<link rel="preload" fetchpriority="high" as="image" href="/images/dotsBackground.png" type="image/png"/>
 		<meta name="Janet Spellman's portfolio" content={Astro.generator} />
 		<title>{title}</title>
-		<ViewTransitions />
+		<ClientRouter />
 	</head>
 
 

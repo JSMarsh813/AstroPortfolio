@@ -9,7 +9,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
   site: "https://main--vermillion-mandazi-4ce414.netlify.app/",
   integrations: [react(), tailwind(), sitemap()],
-  output: "hybrid",
+  output: "static",
   adapter: netlify(),
   prefetch: {
     prefetchAll: true,
