@@ -256,7 +256,12 @@ import wireFrame from "../../src/astroImages/wireFrame.png"
 	<h2 class="gradient-line heading">  Contact</h2>
 
 	<p class="mb-3">All fields marked with * are required</p>
-	<form name="contact" method="POST"  data-netlify="true"   action="/success"> 
+	<form name="contact" method="POST"  data-netlify="true" netlify-honeypot   action="/success"> 
+		<p class="hidden">
+			<label>
+			  Don’t fill this out if you’re human: <input name="bot-field" />
+			</label>
+		  </p>
 		<div class="fields">
 			<div class="field">
 				<label for="name" class="label-styling">Name *</label>
