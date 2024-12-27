@@ -5,10 +5,12 @@ import netlify from "@astrojs/netlify";
 
 import sitemap from "@astrojs/sitemap";
 
+import db from "@astrojs/db";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://main--vermillion-mandazi-4ce414.netlify.app/",
-  integrations: [react(), tailwind(), sitemap()],
+  integrations: [react(), tailwind(), sitemap(), db()],
   output: "static",
   adapter: netlify(),
   prefetch: {
