@@ -49,7 +49,7 @@ export default function LatestProjects() {
           "A personal blog site for a client; the main theme is how their food choices have affected their health. Their blog posts are integrated with netlify's cms, so the client can add, edit and delete blog post by signing in."
         }
         linkToCode={"https://github.com/JSMarsh813/jillyannesite"}
-        linkToLiveSite={"https://nourishedbyketo.com/"}
+        linkToLiveSite={"https://nourishedbyketo.netlify.app/"}
         loadingtype={"eager"}
       ></Project>
 
