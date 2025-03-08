@@ -46,6 +46,14 @@ function SocialLinksNav() {
       className="md:pr-10 py-2 text-violet-900 bg-mainColor"
       id="social"
     >
+      <img
+        src="../../src/astroImages/transparent-logo-bright.png"
+        alt="logo for spellman's consulting its a blue code symbol </> with a wand in place of the slash"
+        class=" bg-violet-900 box-content absolute left-[10px] md:none"
+        height="40"
+        width="40"
+      />
+
       <NavigationMenuList>
         {/* <a
           className="skip-link right-5 top-5 p-3 bg-mainColor text-white"

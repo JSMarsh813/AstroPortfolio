@@ -6,14 +6,33 @@ const sidebar = () => {
       {/*  ********************    MAIN NAV, DOTTED BACKGROUND*****************  */}
       <div
         id="sidebar"
-        className={`fixed left-0 top-0 w-[250px] h-screen bg-mainColor pt-24 p-6 z-51 text-white border-r-4 gradient-line`}
+        className={`fixed left-0 top-0 w-[250px] h-screen bg-mainColor pt-14 p-6 z-51 text-white border-r-4 gradient-line`}
         style={{ backgroundImage: `url("/images/dotsBackground.png")` }}
       >
-        <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center">
+        <div class="flex bg-violet-900 gradient-line border-2 py-4 glow">
+          <img
+            src="../../src/astroImages/transparent-logo-bright.png"
+            alt="logo for spellman's consulting its a blue code symbol </> with a wand in place of the slash"
+            class=" bg-violet-900 box-content hover:border-2 hover:border-white hover:rounded-full hover:bg-white"
+            height="40"
+            width="40"
+          />
+          <p class="ml-4 font-Rogue">
+            <span class="inline-block text-white text-[30px] ">
+              {" "}
+              Spellman's{" "}
+            </span>
+            <span class="inline-block text-white  text-[30px]">
+              {" "}
+              Consulting
+            </span>
+          </p>
+        </div>
+        <ul className="flex flex-col space-y-3 pt-6 bg-[#3c5dca] text-center font-Rogue text-2xl">
           {/* ************************** FIRST ITEM ***********************  */}
           <li className="glow gradient-line border-b-2 pb-1">
             <a href="/#home">
-              <span className="text-center">HOME</span>
+              <span className="text-center">home</span>
             </a>
           </li>
 
@@ -23,7 +42,7 @@ const sidebar = () => {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex mx-auto ">
-                    <span className="pl-6 mr-2 glow ">PROJECTS </span>
+                    <span className="pl-6 mr-2 glow ">projects </span>
                     <img
                       className=""
                       src={`/images/icon-arrow-${open ? "up" : "down"}.svg`}
@@ -33,11 +52,11 @@ const sidebar = () => {
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
                     <ul className="flex flex-col space-y-3">
                       <li className="cursor-pointer glow ">
-                        <a href="/#projects">NEWEST PROJECTS</a>
+                        <a href="/#projects">newest projects</a>
                       </li>
 
                       <li className="cursor-pointer glow">
-                        <a href="/otherprojects/">OTHER PROJECTS</a>
+                        <a href="/otherprojects/">other projects </a>
                       </li>
                     </ul>
                   </Disclosure.Panel>
@@ -47,25 +66,25 @@ const sidebar = () => {
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
-            <a href="/about/">ABOUT ME</a>
+            <a href="/about/">about me</a>
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
             <a href="/#services">
-              <span>SERVICES</span>
+              <span>services </span>
             </a>
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
-            <a href="/#process">THE PROCESS</a>
+            <a href="/#process">the process </a>
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
-            <a href="/#skills">SKILLS</a>
+            <a href="/#skills">skills</a>
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
-            <a href="/#contact">CONTACT</a>
+            <a href="/#contact">contact</a>
           </li>
         </ul>
 

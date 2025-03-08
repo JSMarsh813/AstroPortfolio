@@ -8,6 +8,8 @@ import SocialLinksNav from "../components/navigation/SocialLinksNav"
 import NavToggleButton from "../components/buttons/NavToggleButton"
 import thumbnailImage from "../astroImages/thumbnail.webp"
 import MobileNavContainer from "../components/navigation/MobileNavContainer"
+import { Image } from 'astro:assets';
+import logo from "../../src/astroImages/transparent-logo.png"
 ---
 
 <!doctype html>
@@ -29,7 +31,9 @@ import MobileNavContainer from "../components/navigation/MobileNavContainer"
 	<body class="h-full relative">
 		<header class="flex justify-between ">
 			<NavToggleButton client:load/>
+			<!-- <img src="../../src/astroImages/transparent-logo.png" alt="logo for spellman's consulting its a blue code symbol </> with a wand in place of the slash" class="pl-4 bg-violet-900 box-content" height="40" width="40"/> -->
 			<SocialLinksNav />
+		
 		</header>
 		<!-- need it to be linked to nav toggle button state, use store-->
             <MobileNavContainer  client:load/>
