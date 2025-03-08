@@ -5,8 +5,8 @@ export default function LatestProjects() {
       <Project
         webmsrc={"images/petProfileTailor.webm"}
         mp4src={"images/petProfileTailor.mp4"}
-        vidTitles={"Video of pet profile tailors website"}
-        projectTitle={"Pet Profile Tailor"}
+        vidTitles={"Video of tailored Pet Names website"}
+        projectTitle={"Tailored Pet Names"}
         projectLanguages={
           " Next.js, React, Next-Auth, JavaScript, Tailwindcss, CSS, HTML5, MongoDB, Mongoose, Cloudinary, Node Mailer, SendGrid, SWR"
         }
@@ -14,7 +14,7 @@ export default function LatestProjects() {
           "Help adoption counselors improve pet adoption rates with impactful, fun, and tailor-fitted adoption profiles! Users can easily search and filter through community submitted names and descriptions. After signing up, users can save favorites, follow other users, and submit new names and descriptions."
         }
         linkToCode={"https://github.com/JSMarsh813/PetProfileTailor"}
-        linkToLiveSite={"https://pet-profile-tailor.vercel.app/"}
+        linkToLiveSite={"https://www.tailoredpetnames.com/"}
         loadingtype={"eager"}
         readmeLink={
           "https://github.com/JSMarsh813/PetProfileTailor/blob/main/README.md"
