@@ -9,11 +9,11 @@ export default function MobileNav() {
         className={` w-screen bg-mainColor gradient-line border-t-4`}
         style={{ backgroundImage: `url("/images/dotsBackground.png")` }}
       >
-        <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center text-white">
+        <ul className="flex flex-col space-y-3 pt-6 bg-mainColor text-center text-white font-Rogue text-2xl">
           {/* ************************** FIRST ITEM ***********************  */}
           <li className="glow gradient-line border-b-2 pb-1">
             <a href="/#home">
-              <span className="text-center">HOME</span>
+              <span className="text-center">home </span>
             </a>
           </li>
 
@@ -23,7 +23,7 @@ export default function MobileNav() {
               {({ open }) => (
                 <>
                   <Disclosure.Button className="flex mx-auto ">
-                    <span className="pl-6 mr-2 glow ">PROJECTS </span>
+                    <span className="pl-6 mr-2 glow ">projects </span>
                     <img
                       className=""
                       src={`/images/icon-arrow-${open ? "up" : "down"}.svg`}
@@ -31,13 +31,13 @@ export default function MobileNav() {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
-                    <ul className="flex flex-col space-y-3">
+                    <ul className="flex flex-col space-y-3 text-2xl">
                       <li className="cursor-pointer glow ">
-                        <a href="/#projects">NEWEST PROJECTS</a>
+                        <a href="/#projects"> newest projects</a>
                       </li>
 
                       <li className="cursor-pointer glow">
-                        <a href="/otherprojects/">OTHER PROJECTS</a>
+                        <a href="/otherprojects/">other projects</a>
                       </li>
                     </ul>
                   </Disclosure.Panel>
@@ -47,25 +47,25 @@ export default function MobileNav() {
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
-            <a href="/about/">ABOUT ME</a>
+            <a href="/about/">about me</a>
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
             <a href="/#services">
-              <span>SERVICES</span>
+              <span>services</span>
             </a>
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
-            <a href="/#process">THE PROCESS</a>
+            <a href="/#process">the process</a>
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
-            <a href="/#skills">SKILLS</a>
+            <a href="/#skills">skills</a>
           </li>
 
           <li className="glow gradient-line border-b-2 pb-1">
-            <a href="/#contact">CONTACT</a>
+            <a href="/#contact">contact</a>
           </li>
         </ul>
 
