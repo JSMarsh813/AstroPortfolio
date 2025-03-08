@@ -6,10 +6,9 @@ import { ClientRouter } from 'astro:transitions';
 const { title } = Astro.props;
 import SocialLinksNav from "../components/navigation/SocialLinksNav"
 import NavToggleButton from "../components/buttons/NavToggleButton"
-import thumbnailImage from "../astroImages/thumbnail.webp"
+
 import MobileNavContainer from "../components/navigation/MobileNavContainer"
-import { Image } from 'astro:assets';
-import logo from "../../src/astroImages/transparent-logo.png"
+import image from "../../public/images/transparent-logo-bright.png"
 ---
 
 <!doctype html>
@@ -19,7 +18,7 @@ import logo from "../../src/astroImages/transparent-logo.png"
 		<meta name="description" content="Astro description" />
        <meta property="og:image" content=https://janetspellman.netlify.app/images/thumbnail.png/>
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" href="/images/transparent-logo-bright.png" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 		<link rel="preload" fetchpriority="high" as="image" href="/images/dotsBackground.png" type="image/png"/>
 		<meta name="Janet Spellman's portfolio" content={Astro.generator} />
