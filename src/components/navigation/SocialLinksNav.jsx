@@ -46,8 +46,10 @@ function SocialLinksNav() {
       className="md:pr-10 py-2 text-violet-900 bg-mainColor"
       id="social"
     >
+      {/* //23:53:04 [WARN] [vite] Files in the public directory are served at the root path.
+      Instead of /public/images/logo-purple.png, use /images/logo-purple.png. */}
       <img
-        src="../../src/astroImages/transparent-logo-bright.png"
+        src="/images/transparent-logo-bright.png"
         alt="logo for spellman's consulting its a blue code symbol </> with a wand in place of the slash"
         class=" bg-violet-900 box-content absolute left-[10px] md:none"
         height="40"

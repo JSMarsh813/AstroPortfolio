@@ -1,6 +1,5 @@
 import { Disclosure, Transition } from "@headlessui/react";
 
-import logo from "../../../public/images/transparent-logo-bright.png";
 const sidebar = () => {
   return (
     <div>
@@ -12,7 +11,7 @@ const sidebar = () => {
       >
         <div class="flex bg-violet-900 gradient-line border-2 py-4 glow">
           <img
-            src="../../../public/images/transparent-logo-bright.png"
+            src="/images/transparent-logo-bright.png"
             alt="logo for spellman's consulting its a blue code symbol </> with a wand in place of the slash"
             class=" bg-violet-900 box-content hover:border-2 hover:border-white hover:rounded-full hover:bg-white"
             height="40"
