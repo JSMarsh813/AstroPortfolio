@@ -50,7 +50,7 @@ const sidebar = () => {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm">
-                    <ul className="flex flex-col space-y-3">
+                    <ul className="flex flex-col space-y-3 text-2xl">
                       <li className="cursor-pointer glow ">
                         <a href="/#projects">newest projects</a>
                       </li>
