@@ -1,0 +1,5 @@
+# Redirect all traffic from your Netlify subdomain to primary domain
+
+# https://johnkavanagh.co.uk/articles/redirect-a-default-netlify-subdomain-to-your-custom-domain/
+
+https://janetspellman.netlify.app/* https://janetspellman.netlify.app/:splat 301!
