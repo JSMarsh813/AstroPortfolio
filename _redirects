@@ -2,4 +2,4 @@
 
 # https://johnkavanagh.co.uk/articles/redirect-a-default-netlify-subdomain-to-your-custom-domain/
 
-https://janetspellman.netlify.app/* https://janetspellman.netlify.app/:splat 301!
+https://janetspellman.netlify.app/* https://janetspellman.com/:splat 301!
