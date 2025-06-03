@@ -3,35 +3,167 @@ import Layout from '../layouts/Layout.astro';
 import '@/styles/globals.css'
 import '@/styles/normalize.css'
 import SpaceForSidebar from "@/components/SpaceForDesktopSidebar"
+import WhereToFindMeSection from '@/components/WhereToFindMeSection';
+import DescriptionAndLinks from "@/components/DescriptionAndLinks"
+
+
+const listOfPreviousEvents = [
+  {
+    description: "Interviews with Taylor Desseyn and tech professionals",
+    href: "https://www.linkedin.com/in/taylordesseyn/recent-activity/events/"
+  },
+  {
+    description: "Interviews, coding challenges and other events with Jason Torres",
+    href: "https://www.twitch.tv/jasonetorres/videos"
+  },
+  {
+    description: "Interviews with Angelos Katrantzis and tech professionals",
+    href: "https://www.linkedin.com/in/angeloskatrantzis"
+  },
+  {
+    description: "Interviews with  Ximena (Helenismoo) Cruz and tech professionals",
+    href: "https://www.linkedin.com/in/helenismoo/recent-activity/events/"
+  },
+  {
+    description: "Vlogs of interviews and the Torc team at conferences",
+    href: "https://www.youtube.com/@torcdotdev"
+  }
+]
 
 ---
-
 
 <Layout title="Janet Spellman's About Me">
 
           
     
-    <main class="h-full flex">
+    <main class=" flex">
         <SpaceForSidebar client:load/>
+       <section class="mb-12">
+        <section class="pt-10 px-2 md:px-12 ">
+                         <h1 class="font-Rogue text-4xl text-center" id="about">About Me (Your New Developer)</h1>
 
-        <section class="h-full pt-10 px-12 ">
-                         <h1 class="font-Rogue text-4xl" >About Me</h1>
+            <img class="max-w-[600px] mx-auto w-full"src="/images/me.jpg"/>
          
 
-            <p class="mt-4"> Hi there, thanks for visiting my about me page! </p>
+            <p class="mt-4"> Hi there, thanks for visiting! 👋 My "Spellman Magic" is software development*. Are you curious if I have the skillset you need? <a href="/#skills"> <strong> Click here </strong> </a></p> 
             
-            <p class="mt-4">  I've always enjoyed using technology, whether by building computers, playing classic games with emulators, or creating custom apps to make other's lives easier.  </p>
+            <p class="mt-4 mb-2">  I've always enjoyed using technology, whether by:  </p>
+                        
+                        <ul class="list-disc mx-auto pl-6"> 
+                        <li> Building computers </li>
+                        <li> Playing classic games like Final Fantasy 7 with emulators </li>
+                         <li> Styling MySpace and Neopets profiles </li>
+                         <li> Or saving others from technical issues such as vengeful printers and stubborn computer errors</li>
+                
+                </ul>
             
-            <p class="mt-4"> Although I've had jobs and volunteer roles in a variety of industries, such as physical therapy, animal shelters, bartending, and hospitality, I kept returning to coding. I found becoming a software engineer was the perfect way to combine my love of technology, creativity, and the ability to help others. </p>
+            <p class="mt-4"> My journey to code actually began when I worked at an animal shelter! I built an automated audiobook program, which reduced the stress levels of shelter pets and increased positive outcomes. Every since then, I've been using code to solve real world problems. </p>
 
-            <p class="mt-4">When I'm not coding, you can find me enjoying fantasy games, movies, or books! My favorite games are Hades, baldur's gate 3 and Final Fantasy 14. When the weather cooperates, I'm always hyped to go hiking and I keep meaning to start Brazilian Jiu-Jitsu. Also, I'm a language nerd, I've read a few novels in Japanese and I'm currently working on <span class="line-through">mastering</span> getting half decent at spoken Spanish.
-            </p>
+           <p class="mt-4">* If "Spellman Magic" does not ring a bell, look up Sabrina the Teenage Witch. It was a popular 90s sitcom following the "Spellman" family of witches. Coincidentally (or magically?), that is my last name too. 😉.</p>
 
-            <p class="mt-4">
-                I look forward to meeting you!
-            </p>
-           
+            <h3 class="mt-4 text-center mb-4 font-Rogue text-4xl" id="more-about-me">More about me: </h3>
+                <div class="flex justify-center">
+                <ul class="mx-auto ">                  
+                     <li> 🧩 Codewars/ Coding Challenge Fanatic </li>
+                     <li> 🎬 📚 🎮 Fantasy Lover </li>
+                     <li> 🎮 Favorite Games: Hades, Baldur's gate 3, Untitled Goose Game, and Final Fantasy 14 </li>
+                     <li> 🏞️ When the weather cooperates, I'm always hyped to go hiking! </li>
+                  
+                     <li> 🍙🌮 I've read a few novels in Japanese and I'm currently working on <span class="line-through">mastering</span> getting half decent at Spanish </li>
+                     <li> 🐱🐶 enthusiast </li>
+                     <li> 🐈 Always adding more features to our 2 catios! (Enclosed outside areas for cats)</li>
+                    <li> 🧗‍♀️ Would like to do brazilian jiu jitsu and rock climbing in the future </li>
+                    <li>🧔 Caution: Approaching puns and dad jokes ahead. Eye-rolls may be unavoidable </li>
+                </div>
     
+    
+
+    
+        </section>
+         <section class="pt-10 px-2 md:px-12 ">
+
+         <h2 class="font-Rogue text-4xl text-center mb-4" id="where-to-find-me" >Where to find me </h2>
+
+         <p class="text-center my-5">If you click the icons they will automatically send you to that link. Don't like being redirected? Then you can copy and paste the links manually. </p>
+       
+         <WhereToFindMeSection/>
+       
+         </section>
+
+         <!-- ################### WHY JOIN TORC ##################-->
+
+           <section class="pt-4 px-2 md:px-12 flex flex-wrap gap-2">
+                   <h2 class="font-Rogue text-4xl mx-auto mb-4 " id="why-join-torc" > Why Join Torc? </h2>
+
+                <div class="lg:flex">
+                   <img src="/images/ambassador.png" class="max-h-[400px] mx-auto" />
+
+                   <div>  <!-- div for flexed text on right START -->
+
+                   <p class="lg:ml-4"> I became a Torc Ambassador because I was impressed by the engaging and supportive community. Everyone genuinely wants to see you succeed, and that energy really comes through in the Discord chats and live events! <p/>
+
+                  <p class="lg:ml-4 my-4"> A big reason why I joined is to help bring more developers into this incredibly supportive community, especially as so many go through layoffs and desperately need this kind of space. <p/> 
+
+                    <p class="w-full my-4 lg:ml-4"> Torc is part of RandStand Digital and is a:</p>
+
+                      <ol class="ml-4 lg:ml-8">
+                          <li class="mb-2"> 1. A talent marketplace that matches tech professionals to roles </li>
+                         <li> 2. A community where tech professionals can make friends with other professionals and improve their skills with weekly virtual talks and events</li>
+                      </ol>
+                
+                    </div> <!-- div for flexed text on right END -->
+                </div> 
+
+<!-- ################### Torc's Talent Marketplace ##################-->
+
+                      <h3 class="font-Rogue text-4xl text-center mb-4 w-full " id="torcs-talent-marketplace"> Torc's Talent Marketplace </h5>
+                   
+
+                   <p class="w-full text-center"> To join the free talent marketplace, you can make a profile here: </p>
+                   <p  class="w-full text-center">
+                      <a href="https://platform.torc.dev/#/r/sT85MV0n/cp"> <span> Click <strong>here </strong> 👈 </a> or copy this link<span>  https://platform.torc.dev/#/r/sT85MV0n/cp 
+                   </p>
+                                <img src="/images/TorcPlatform.png"/ class="mx-auto max-w-[600px] w-full" alt="screenshot of the dashboard page for Torc, which says if you profile is complete or not">
+
+                             <h5 class="font-Rogue text-4xl text-center mb-4 w-full " id="torcs-community-page" > Torc's Community Page </h5>
+
+                     <p class="w-full"> To see the weekly virtual events check out the Torc Community page! You can also <strong>click the link at the top of the page to join the active discord</strong>. All events are <strong> free! </strong>  </p>
+                        
+                       <p  class="w-full text-center">
+                        <a href="https://cal.torc.dev/" > <span> Click <strong>here 👈</strong></a> or copy this link <span>  <span>  https://cal.torc.dev/ </span>
+                  
+                         </p>
+
+                    <h4 class="text-center w-full font-Rogue text-4xl" id="torcs-type-of-events"> Types of Events: </h4>
+
+                        <p class="flex text-center">
+                        
+                        <ul class="list-disc mx-auto  pl-6 md:pl-0"> 
+                            <li class="mb-2"> Live streams of Q&As such as job search questions and resume reviews </li> 
+                            <li class="mb-2">  Live interviews with tech professionals </li> 
+                            <li class="mb-2">  Weekly networking events </li>
+                            <li> Discord community events such as game night </li> 
+                        </ul>
+                     </p>
+
+                  
+                     <h4 class="font-Rogue text-4xl text-center w-full" id="torcs-previous-events"> Previous Events </h4>                    
+
+                         <p class="w-full text-center"> Want a taste of the Torc experience before commiting to joining the party? View Previous events: </p>
+
+                    
+                    
+                            <DescriptionAndLinks list={listOfPreviousEvents}/>            
+                                     
+
+
+                  
+                         <p class="text-center">Feeling nervous? don't worry you can choose how much or little you want to participate! For almost all of the events, the audience participates through text channels </p>
+
+                        <img src="/images/TorcCalender.png"/ class="w-full mx-auto max-w-[800px]" alt="screenshot of the calender showing upcoming virtual events">
+
+                    
+         </section>
         </section>
     </main>
 
