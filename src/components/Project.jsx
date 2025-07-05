@@ -52,7 +52,7 @@ export default function Projects({
 
       <p className="">{projectDescription}</p>
 
-      <ul className="gap-4 my-10 flex">
+      <ul className="gap-4 my-10 flex justify-evenly">
         {linkToCode && (
           <li>
             <GradientNavigationButton
@@ -67,8 +67,8 @@ export default function Projects({
         {linkToLiveSite && (
           <li>
             <GradientNavigationButton
-              text="View Live!"
-              aria="View Live!"
+              text="View"
+              aria="View"
               link={linkToLiveSite}
               target={"_blank"}
               rel={"noopener noreferrer"}
@@ -78,8 +78,8 @@ export default function Projects({
         {readmeLink && (
           <li>
             <GradientNavigationButton
-              text="ReadMe Link!"
-              aria="readMe Link!"
+              text="ReadMe"
+              aria="readMe"
               link={readmeLink}
               target={"_blank"}
               rel={"noopener noreferrer"}
