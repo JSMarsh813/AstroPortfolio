@@ -3,6 +3,26 @@ export default function LatestProjects() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-12">
       <Project
+        imgsrc={"images/comingSoon.jpg"}
+        // webmsrc={"images/petProfileTailor.webm"}
+        // mp4src={"images/petProfileTailor.mp4"}
+        vidTitles={"Video of Only Tech Bangers"}
+        projectTitle={"Only Tech Bangers"}
+        projectLanguages={
+          " Next.js 15, React 19, Appwrite, TypeScript, Tailwindcss, SWR, React-hook-form, React-Select, HeadlessUI,CSS, HTML5"
+        }
+        projectDescription={
+          "An app to easily filter through technical resources so you can find the 'banger' resources you need! Spend less time finding the best resources (or looking for an old resource you love) and more time learning. Whether you're looking for technical resources, AI resources, the right community for you or career tips, theres resources for everyone. Logged in users can save favorites, sort through their liked and submitted posts, flag contents and submit content. "
+        }
+        linkToCode={"https://github.com/JSMarsh813/only-bangers"}
+        linkToLiveSite={"https://www.onlytechbangers.com"}
+        loadingtype={"eager"}
+        readmeLink={
+          "https://github.com/JSMarsh813/only-bangers/blob/main/README.md"
+        }
+      ></Project>
+
+      <Project
         webmsrc={"images/petProfileTailor.webm"}
         mp4src={"images/petProfileTailor.mp4"}
         vidTitles={"Video of tailored Pet Names website"}
