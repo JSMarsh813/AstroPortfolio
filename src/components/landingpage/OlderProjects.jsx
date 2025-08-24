@@ -3,6 +3,23 @@ export default function LatestProjects() {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-12">
       <Project
+        webmsrc={"images/tataru.webm"}
+        mp4src={"images/tataruo.mp4"}
+        vidTitles={"Video of the Tatarus Corner Website"}
+        projectTitle={"Tataru's Corner"}
+        projectLanguages={
+          " HTML, CSS, Tailwindcss, JavaScript, React, Node.JS, React Router, GIMP"
+        }
+        projectDescription={
+          "A fansite for everyones favorite fiesty Final Fantasy 14 receptionist. Originally created as a Christmas present at the request of a client, this public version keeps the functionality but replaces their personal character with the popular NPC, Tataru!"
+        }
+        linkToCode={"https://github.com/JSMarsh813/Tataru"}
+        linkToLiveSite={"https://tataru.onrender.com/"}
+        loadingtype={"eager"}
+        readmeLink={"https://github.com/JSMarsh813/Tataru/blob/main/README.md"}
+      ></Project>
+
+      <Project
         imgsrc={"/images/pokemonREADMEgiphy.gif"}
         vidTitles={"Video of pet profile tailors website"}
         projectTitle={"PokéDeck"}
@@ -10,7 +27,7 @@ export default function LatestProjects() {
           " CSS, JavaScript, EJS, Express.js, Node.js, MongoDB, Mongoose, Sessions, Bcrypt"
         }
         projectDescription={
-          "This project is dedicated to one of the best stories ever told that influenced millions of kids and adults alike. A CRUD app with local authentication so you can add different Pokemon to your deck to view their abilities and information to plan out your perfect PokéDeck."
+          "This project is dedicated to one of the best stories ever told that influenced millions of kids and adults alike. A CRUD app with local authentication so you can add different Pokemon to your deck to view their abilities and information to plan out your perfect PokéDeck. Built with a team of developers."
         }
         linkToCode={"https://github.com/JSMarsh813/group-project-todo-mvc"}
         loadingtype={"eager"}
